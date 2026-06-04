@@ -486,17 +486,18 @@ function AnimatedBackground() {
 
 // ─── STYLE HELPERS ───────────────────────────────────────────────────────────
 const fld = err => ({
-  width:"100%", padding:"10px 14px", fontSize:13, fontFamily:C.sans,
-  background: err ? C.errBg : "rgba(255,255,255,0.85)",
+  width:"100%", padding:"12px 14px", fontSize:13, fontFamily:C.sans,
+  background: err ? C.errBg : "rgba(255,255,255,0.88)",
   border:`1.5px solid ${err ? C.errBorder : C.border}`,
-  borderRadius:6, outline:"none", color:C.textPrimary,
-  transition:"border-color 0.15s, box-shadow 0.15s",
-  boxSizing:"border-box", letterSpacing:"0.01em",
+  borderRadius:7, outline:"none", color:C.textPrimary,
+  transition:"border-color 0.15s, box-shadow 0.15s, background 0.15s",
+  boxSizing:"border-box", letterSpacing:"0.01em", lineHeight:1.6,
   backdropFilter:"blur(8px)",
 });
 const onFocus = e => {
   e.target.style.borderColor = C.blue500;
-  e.target.style.boxShadow   = `0 0 0 3px rgba(26,86,219,0.12)`;
+  e.target.style.boxShadow   = `0 0 0 4px rgba(26,86,219,0.12)`;
+  e.target.style.background  = "#fff";
 };
 const onBlur = err => e => {
   e.target.style.borderColor = err ? C.errBorder : C.border;
@@ -525,13 +526,13 @@ const FL = ({ children, optional }) => (
 
 const Chip = ({ label, active, onClick }) => (
   <button type="button" onClick={onClick} style={{
-    padding:"7px 16px", borderRadius:5, fontSize:12,
-    fontWeight: active ? 600 : 400, cursor:"pointer", fontFamily:C.sans,
+    padding:"8px 16px", borderRadius:6, fontSize:12,
+    fontWeight: active ? 600 : 500, cursor:"pointer", fontFamily:C.sans,
     letterSpacing:"0.01em", transition:"all 0.18s",
     border:`1.5px solid ${active ? C.blue500 : C.border}`,
-    background: active ? C.blue500 : "rgba(255,255,255,0.7)",
+    background: active ? C.blue500 : "rgba(255,255,255,0.8)",
     color: active ? C.white : C.textSecondary,
-    boxShadow: active ? "0 2px 8px rgba(26,86,219,0.25)" : "none",
+    boxShadow: active ? "0 3px 10px rgba(26,86,219,0.3)" : "0 1px 3px rgba(0,0,0,0.05)",
   }}>
     {label}
   </button>
@@ -539,12 +540,12 @@ const Chip = ({ label, active, onClick }) => (
 
 // glass card
 const glassCard = {
-  background:"rgba(255,255,255,0.80)",
-  backdropFilter:"blur(24px) saturate(1.6)",
-  WebkitBackdropFilter:"blur(24px) saturate(1.6)",
-  border:`1.5px solid rgba(255,255,255,0.9)`,
-  borderRadius:12,
-  boxShadow:"0 4px 24px rgba(17,68,160,0.08), 0 1px 4px rgba(17,68,160,0.06)",
+  background:"rgba(255,255,255,0.88)",
+  backdropFilter:"blur(28px) saturate(1.8)",
+  WebkitBackdropFilter:"blur(28px) saturate(1.8)",
+  border:`1.5px solid rgba(255,255,255,0.95)`,
+  borderRadius:13,
+  boxShadow:"0 8px 32px rgba(17,68,160,0.1), 0 1px 6px rgba(17,68,160,0.08)",
 };
 
 // ─── SIDEBAR ─────────────────────────────────────────────────────────────────
@@ -796,7 +797,7 @@ export default function OnboardingForm({ onComplete, user }) {
             </div>
 
             {/* Form card */}
-            <div style={{ ...glassCard, padding:"38px 38px 30px",
+            <div style={{ ...glassCard, padding:"42px 42px 34px",
               opacity:vis?1:0, transform:vis?"none":"translateY(10px)",
               transition:"opacity 0.28s ease, transform 0.28s ease" }}>
 
@@ -813,7 +814,7 @@ export default function OnboardingForm({ onComplete, user }) {
                     </p>
                   </div>
 
-                  <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:"20px 18px" }}>
+                  <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:"22px 20px" }}>
 
                     <div>
                       <FL>Full name *</FL>
@@ -945,7 +946,7 @@ export default function OnboardingForm({ onComplete, user }) {
                     </p>
                   </div>
 
-                  <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:"20px 18px" }}>
+                  <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:"22px 20px" }}>
 
                     <div>
                       <FL>Product / business name *</FL>
@@ -1086,12 +1087,31 @@ export default function OnboardingForm({ onComplete, user }) {
         body{background:#F0F4FF;}
         input::placeholder,textarea::placeholder{color:#94a3b8;}
         select option{background:#fff;color:#0A1628;}
-        ::-webkit-scrollbar{width:4px;}
+        ::-webkit-scrollbar{width:6px;}
         ::-webkit-scrollbar-track{background:transparent;}
-        ::-webkit-scrollbar-thumb{background:rgba(17,68,160,0.2);border-radius:4px;}
+        ::-webkit-scrollbar-thumb{background:rgba(17,68,160,0.25);border-radius:4px;}
+        ::-webkit-scrollbar-thumb:hover{background:rgba(17,68,160,0.4);}
         button:hover:not(:disabled){filter:brightness(1.05);}
         .hidden{display:none!important;}
         @media(min-width:1024px){.hidden.lg\\:flex{display:flex!important;}}
+        
+        /* Mobile responsive improvements */
+        @media(max-width:768px){
+          main{flex-direction:column!important;}
+          main > aside{display:none!important;}
+          main > div{padding:24px 16px!important;}
+          main > div > div{max-width:100%!important;}
+          h1{font-size:24px!important;margin-bottom:12px!important;}
+          div[style*="display:grid"]{gap:16px 14px!important;}
+          input,select,textarea{font-size:14px;padding:11px 12px;}
+          button{padding:10px 16px;font-size:11px;}
+          div[style*="gridColumn:span 2"]{grid-column:span 1!important;}
+        }
+        @media(max-width:480px){
+          main > div{padding:16px 12px!important;}
+          h1{font-size:20px!important;}
+          div[style*="padding:"]{padding-left:16px!important;padding-right:16px!important;}
+        }
       `}</style>
     </div>
   );
