@@ -7,6 +7,14 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    html, body {
+      width: 100%;
+      height: 100%;
+      zoom: 1 !important;
+      transform-origin: 0 0;
+    }
+    
     body {
       font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
       background: #0f172a;
@@ -105,10 +113,14 @@
     .card-body { padding: 16px 20px; }
     .card-body img {
       width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
       border-radius: 8px;
       border: 1px solid #334155;
       cursor: pointer;
       transition: transform 0.2s;
+      aspect-ratio: auto;
     }
     .card-body img:hover { transform: scale(1.01); }
 
@@ -150,14 +162,19 @@
       justify-content: center;
       align-items: center;
       cursor: zoom-out;
+      zoom: 1 !important;
+      transform: none !important;
     }
     .lightbox.active { display: flex; }
     .lightbox img {
-      max-width: 95vw;
-      max-height: 95vh;
+      max-width: calc(95vw / var(--current-zoom, 1));
+      max-height: calc(95vh / var(--current-zoom, 1));
+      width: auto;
+      height: auto;
       object-fit: contain;
       border-radius: 8px;
       box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+      zoom: 1 !important;
     }
     .lightbox .close {
       position: absolute;
@@ -168,6 +185,7 @@
       cursor: pointer;
       background: none;
       border: none;
+      zoom: 1 !important;
     }
     .lightbox .close:hover { color: #fff; }
   </style>
@@ -195,6 +213,40 @@
   </div>
 
 <script>
+  // Detect and handle zoom level
+  let currentZoom = 1;
+  
+  function detectZoom() {
+    const originalWidth = window.outerWidth;
+    const currentWidth = window.innerWidth;
+    const ratio = originalWidth / currentWidth;
+    
+    // Alternative method: check device pixel ratio and page zoom
+    const dpr = window.devicePixelRatio || 1;
+    
+    // More reliable method: use getBoundingClientRect
+    const div = document.createElement('div');
+    div.style.width = '100px';
+    document.body.appendChild(div);
+    const boxWidth = div.getBoundingClientRect().width;
+    document.body.removeChild(div);
+    
+    currentZoom = 100 / boxWidth;
+    document.documentElement.style.setProperty('--current-zoom', currentZoom);
+  }
+  
+  // Detect zoom on load and on resize
+  window.addEventListener('load', detectZoom);
+  window.addEventListener('resize', detectZoom);
+  window.addEventListener('wheel', (e) => {
+    if (e.ctrlKey || e.metaKey) {
+      setTimeout(detectZoom, 50);
+    }
+  });
+  
+  // Initial zoom detection
+  setTimeout(detectZoom, 100);
+
   const SUPABASE_URL  = "https://ptncbweomagroosudqmf.supabase.co";
   const SUPABASE_KEY  = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB0bmNid2VvbWFncm9vc3VkcW1mIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ0MzM1MjgsImV4cCI6MjA5MDAwOTUyOH0.CKdzxHzh5INOXGRgDo8jwsfd9BIgIo3EXUARzkKai88";
 

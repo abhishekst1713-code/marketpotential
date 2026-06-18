@@ -32,14 +32,19 @@ function buildPrefill(userData) {
   };
 
   const BIZ_TYPE_MAP = {
-    "B2B (Business to Business)": "B2B_SME",
-    "B2C (Business to Consumer)": "B2C_MASS",
-    "B2B2C":                      "B2B_SME",
-    "D2C (Direct to Consumer)":   "B2C_MASS",
-    "Marketplace":                "B2B_SME",
-    "SaaS / Platform":            "B2B_SME",
-    "Other":                      "B2B_SME",
-  };
+  // Short form — matches OnboardingForm BUSINESS_TYPES values
+  "B2B":             "B2B_SME",
+  "B2C":             "B2C_MASS",
+  "B2B2C":           "B2B_SME",
+  "D2C":             "B2C_MASS",
+  "Marketplace":     "B2B_SME",
+  "SaaS / Platform": "B2B_SME",
+  // Long form — kept for backwards compatibility
+  "B2B (Business to Business)": "B2B_SME",
+  "B2C (Business to Consumer)": "B2C_MASS",
+  "D2C (Direct to Consumer)":   "B2C_MASS",
+  "Other":                      "B2B_SME",
+};
 
   return {
     organization: userData.organization,

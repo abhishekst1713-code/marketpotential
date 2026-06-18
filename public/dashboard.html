@@ -47,49 +47,49 @@ body { font-family: 'Inter', sans-serif; color: #1e3050; background: var(--surfa
 #assessShell { background: transparent; min-height: 100vh; position: relative; z-index: 1; }
 
 .topbar {
-  background: var(--b900); height: 52px;
+  background: var(--b900); height: 45px;
   display: flex; align-items: center; justify-content: space-between;
-  padding: 0 24px; position: sticky; top: 0; z-index: 200;
+  padding: 0 18px; position: sticky; top: 0; z-index: 200;
   box-shadow: 0 2px 20px rgba(6,18,40,0.5);
   border-bottom: 1px solid rgba(59,130,246,0.15);
 }
-.tl { display: flex; align-items: center; gap: 12px; }
-.lm { width: 32px; height: 32px; background: var(--b500); border-radius: 7px; display: grid; place-items: center; font-family: 'IBM Plex Mono', monospace; font-weight: 700; font-size: 11px; color: #fff; box-shadow: 0 2px 8px rgba(26,86,219,0.4); }
-.tn { font-size: 11px; font-weight: 700; color: #fff; letter-spacing: .14em; text-transform: uppercase; }
-.ts { font-size: 7px; color: var(--b300); letter-spacing: .1em; text-transform: uppercase; margin-top: 1px; }
-.tr { display: flex; align-items: center; gap: 14px; }
-.sector-tag { font-size: 9px; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.45); border: 1px solid rgba(255,255,255,.15); padding: 3px 10px; border-radius: 20px; transition: all .2s; }
+.tl { display: flex; align-items: center; gap: 10px; }
+.lm { width: 28px; height: 28px; background: var(--b500); border-radius: 6px; display: grid; place-items: center; font-family: 'IBM Plex Mono', monospace; font-weight: 700; font-size: 9px; color: #fff; box-shadow: 0 2px 8px rgba(26,86,219,0.4); }
+.tn { font-size: 10px; font-weight: 700; color: #fff; letter-spacing: .12em; text-transform: uppercase; }
+.ts { font-size: 6px; color: var(--b300); letter-spacing: .08em; text-transform: uppercase; margin-top: 1px; }
+.tr { display: flex; align-items: center; gap: 10px; }
+.sector-tag { font-size: 8px; letter-spacing: .08em; text-transform: uppercase; color: rgba(255,255,255,.45); border: 1px solid rgba(255,255,255,.15); padding: 2px 8px; border-radius: 18px; transition: all .2s; }
 .sector-tag.active { color: var(--b200); border-color: rgba(147,197,253,.4); background: rgba(59,130,246,0.1); }
-#topScoreWrap { display: none; align-items: center; gap: 8px; }
-#topScoreWrap span { font-size: 9px; color: rgba(255,255,255,.4); text-transform: uppercase; letter-spacing: .1em; }
-#topScore { font-family: 'IBM Plex Mono', monospace; font-size: 14px; font-weight: 600; color: var(--b300); }
+#topScoreWrap { display: none; align-items: center; gap: 6px; }
+#topScoreWrap span { font-size: 8px; color: rgba(255,255,255,.4); text-transform: uppercase; letter-spacing: .08em; }
+#topScore { font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; color: var(--b300); }
 
-.assess-inner { max-width: 1160px; margin: 0 auto; padding: 40px 28px 100px; position: relative; z-index: 1; }
+.assess-inner { max-width: 1160px; margin: 0 auto; padding: 24px 16px 60px; position: relative; z-index: 1; }
 
 /* Header styles */
-.hdr { grid-column: 1 / -1 !important; border-radius: 8px !important; min-height: 85px !important; flex-wrap: wrap !important; padding: 12px 16px !important; gap: 8px !important; }
-.hdr-stats { flex-wrap: wrap !important; gap: 6px !important; justify-content: flex-end !important; }
-.hdr-kpi { padding: 6px 12px !important; }
-.hdr-kpi-v { font-size: 13px !important; }
-.hdr-kpi-l { font-size: 7px !important; }
+.hdr { grid-column: 1 / -1 !important; border-radius: 8px !important; min-height: 70px !important; flex-wrap: wrap !important; padding: 10px 14px !important; gap: 6px !important; }
+.hdr-stats { flex-wrap: wrap !important; gap: 4px !important; justify-content: flex-end !important; }
+.hdr-kpi { padding: 4px 10px !important; }
+.hdr-kpi-v { font-size: 11px !important; }
+.hdr-kpi-l { font-size: 6px !important; }
 
-.hero { margin-bottom: 28px; }
-.hero h1 { font-size: clamp(24px,3vw,36px); font-weight: 700; letter-spacing: -.02em; line-height: 1.1; color: var(--b900); }
-.hero h1 em { font-style: normal; color: var(--b500); text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 2px; }
-.hero p { margin-top: 8px; font-size: 13px; color: #4a6080; line-height: 1.7; max-width: 520px; }
+.hero { margin-bottom: 16px; }
+.hero h1 { font-size: clamp(18px,2.5vw,28px); font-weight: 700; letter-spacing: -.02em; line-height: 1.1; color: var(--b900); }
+.hero h1 em { font-style: normal; color: var(--b500); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 2px; }
+.hero p { margin-top: 6px; font-size: 12px; color: #4a6080; line-height: 1.6; max-width: 520px; }
 
 /* AI badge */
 .ai-badge { display: inline-flex; align-items: center; gap: 5px; font-size: 9px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--b600); background: var(--b50); border-radius: 4px; padding: 3px 9px; margin-bottom: 14px; border: 1px solid var(--b200); }
 .ai-badge::before { content: '✦'; font-size: 8px; color: var(--b400); }
 
 /* Skeleton shimmer */
-.ql-skeleton { display: flex; flex-direction: column; gap: 14px; padding: 4px 0; }
+.ql-skeleton { display: flex; flex-direction: column; gap: 10px; padding: 4px 0; }
 .ql-skel-item { height: 56px; background: linear-gradient(90deg,#dbeafe 25%,#eff6ff 50%,#dbeafe 75%); background-size: 200% 100%; border-radius: 6px; animation: shimmer 1.4s infinite; }
 @keyframes shimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
 
 /* Step nav */
-.steps { display: flex; gap: 0; background: rgba(255,255,255,0.85); border: 1.5px solid var(--border); border-radius: 8px; padding: 5px; margin-bottom: 8px; overflow-x: auto; backdrop-filter: blur(12px); }
-.sbtn { flex: 1; min-width: 0; padding: 8px 8px; border: none; background: transparent; cursor: pointer; font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 500; color: #6080a0; border-radius: 5px; transition: all .2s; display: flex; align-items: center; gap: 5px; justify-content: center; white-space: nowrap; }
+.steps { display: flex; gap: 0; background: rgba(255,255,255,0.85); border: 1.5px solid var(--border); border-radius: 8px; padding: 4px; margin-bottom: 6px; overflow-x: auto; backdrop-filter: blur(12px); }
+.sbtn { flex: 1; min-width: 0; padding: 6px 6px; border: none; background: transparent; cursor: pointer; font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 500; color: #6080a0; border-radius: 4px; transition: all .2s; display: flex; align-items: center; gap: 4px; justify-content: center; white-space: nowrap; }
 .sbtn.active { background: var(--b600); color: #fff; box-shadow: 0 2px 8px rgba(17,68,160,0.3); }
 .sbtn.done { color: #059669; }
 .snum { width: 17px; height: 17px; border-radius: 50%; border: 1.5px solid currentColor; display: grid; place-items: center; font-size: 9px; font-weight: 700; flex-shrink: 0; }
@@ -103,51 +103,51 @@ body { font-family: 'Inter', sans-serif; color: #1e3050; background: var(--surfa
   cursor: pointer;
   pointer-events: all;
 }
-.prog-track { height: 2px; background: var(--border); border-radius: 2px; margin-bottom: 24px; overflow: hidden; }
+.prog-track { height: 2px; background: var(--border); border-radius: 2px; margin-bottom: 14px; overflow: hidden; }
 .prog-fill { height: 100%; background: var(--b500); border-radius: 2px; transition: width .4s ease; box-shadow: 0 0 8px rgba(26,86,219,0.5); }
 
 /* Two-col */
-.assess-cols { display: grid; grid-template-columns: 1fr 310px; gap: 20px; align-items: start; }
+.assess-cols { display: grid; grid-template-columns: 1fr 280px; gap: 14px; align-items: start; }
 
 /* Form card */
-.form-card { background: rgba(255,255,255,0.85); border: 1.5px solid rgba(255,255,255,0.95); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 28px rgba(17,68,160,0.1); position: relative; backdrop-filter: blur(20px); }
-.form-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--b500); }
-.sec { display: none; padding: 32px 32px 24px; }
+.form-card { background: rgba(255,255,255,0.85); border: 1.5px solid rgba(255,255,255,0.95); border-radius: 10px; overflow: hidden; box-shadow: 0 4px 24px rgba(17,68,160,0.08); position: relative; backdrop-filter: blur(20px); }
+.form-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--b500); }
+.sec { display: none; padding: 20px 20px 16px; }
 .sec.active { display: block; animation: fadeUp .22s ease; }
 @keyframes fadeUp { from { opacity:0; transform:translateY(8px) } to { opacity:1; transform:none } }
 
-.sec-hd { display: flex; align-items: center; gap: 14px; margin-bottom: 26px; padding-bottom: 18px; border-bottom: 1.5px solid var(--border); }
-.sec-icon { width: 42px; height: 42px; border-radius: 9px; display: grid; place-items: center; font-size: 20px; flex-shrink: 0; background: var(--b50); border: 1.5px solid var(--b200); }
-.sec-ttl { font-size: 15px; font-weight: 700; color: var(--b900); letter-spacing: -.01em; }
-.sec-sub { font-size: 12px; color: #6080a0; margin-top: 3px; }
+.sec-hd { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1.5px solid var(--border); }
+.sec-icon { width: 36px; height: 36px; border-radius: 7px; display: grid; place-items: center; font-size: 16px; flex-shrink: 0; background: var(--b50); border: 1.5px solid var(--b200); }
+.sec-ttl { font-size: 13px; font-weight: 700; color: var(--b900); letter-spacing: -.01em; }
+.sec-sub { font-size: 11px; color: #6080a0; margin-top: 2px; }
 
 /* Form elements */
-.fg { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-.fd { display: flex; flex-direction: column; gap: 6px; }
+.fg { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.fd { display: flex; flex-direction: column; gap: 4px; }
 .fd.s2 { grid-column: span 2; }
-.fd > label { font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--b600); }
-.fd .hint { font-size: 10.5px; color: var(--b500); font-style: italic; line-height: 1.6; margin-bottom: 3px; }
+.fd > label { font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--b600); }
+.fd .hint { font-size: 9.5px; color: var(--b500); font-style: italic; line-height: 1.5; margin-bottom: 2px; }
 
-input, select, textarea { font-family: 'Inter', sans-serif; font-size: 13px; padding: 12px 14px; border: 1.5px solid var(--border); border-radius: 7px; background: rgba(255,255,255,0.85); color: var(--b900); transition: border-color .2s, box-shadow .2s, background .2s; outline: none; width: 100%; backdrop-filter: blur(4px); }
+input, select, textarea { font-family: 'Inter', sans-serif; font-size: 12px; padding: 9px 11px; border: 1.5px solid var(--border); border-radius: 6px; background: rgba(255,255,255,0.85); color: var(--b900); transition: border-color .2s, box-shadow .2s, background .2s; outline: none; width: 100%; backdrop-filter: blur(4px); }
 input:focus, select:focus, textarea:focus { border-color: var(--b500); box-shadow: 0 0 0 4px rgba(26,86,219,0.12); background: #fff; }
-textarea { resize: vertical; min-height: 80px; line-height: 1.6; }
+textarea { resize: vertical; min-height: 60px; line-height: 1.5; }
 input[type=range] { padding: 0; border: none; background: transparent; accent-color: var(--b500); cursor: pointer; }
 
-.rv { font-family: 'IBM Plex Mono', monospace; font-size: 18px; font-weight: 600; text-align: center; padding: 8px; background: var(--b50); border: 1.5px solid var(--b200); border-radius: 6px; margin-bottom: 4px; color: var(--b600); }
+.rv { font-family: 'IBM Plex Mono', monospace; font-size: 14px; font-weight: 600; text-align: center; padding: 6px; background: var(--b50); border: 1.5px solid var(--b200); border-radius: 5px; margin-bottom: 3px; color: var(--b600); }
 .rl { display: flex; justify-content: space-between; font-size: 10px; color: #6080a0; }
 
-.pills { display: flex; gap: 8px; flex-wrap: wrap; }
-.pill { padding: 7px 14px; border: 1.5px solid var(--border); border-radius: 6px; font-size: 12px; cursor: pointer; transition: all .18s; font-weight: 500; background: rgba(255,255,255,0.75); color: #6080a0; }
+.pills { display: flex; gap: 6px; flex-wrap: wrap; }
+.pill { padding: 5px 11px; border: 1.5px solid var(--border); border-radius: 5px; font-size: 11px; cursor: pointer; transition: all .18s; font-weight: 500; background: rgba(255,255,255,0.75); color: #6080a0; }
 .pill:hover { border-color: var(--b500); color: var(--b600); background: var(--b50); transform: translateY(-1px); }
 .pill.on { background: var(--b500); color: #fff; border-color: var(--b500); box-shadow: 0 3px 10px rgba(26,86,219,0.3); }
 
-.ckg { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; }
-.cki { display: flex; align-items: center; gap: 8px; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: 7px; cursor: pointer; font-size: 12px; transition: all .18s; background: rgba(255,255,255,0.7); color: #6080a0; }
+.ckg { display: grid; grid-template-columns: repeat(3,1fr); gap: 6px; }
+.cki { display: flex; align-items: center; gap: 6px; padding: 8px 10px; border: 1.5px solid var(--border); border-radius: 6px; cursor: pointer; font-size: 11px; transition: all .18s; background: rgba(255,255,255,0.7); color: #6080a0; }
 .cki:hover { border-color: var(--b400); background: var(--b50); color: var(--b700); }
 .cki input[type=checkbox] { width: 14px; height: 14px; padding: 0; border: none; background: transparent; accent-color: var(--b500); flex-shrink: 0; cursor: pointer; }
 
-.fnav { display: flex; justify-content: space-between; align-items: center; padding: 18px 32px; border-top: 1.5px solid var(--border); background: rgba(240,244,255,0.7); backdrop-filter: blur(8px); gap: 12px; }
-.btn { padding: 11px 26px; border-radius: 7px; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; border: 1.5px solid transparent; transition: all .2s; letter-spacing: .03em; }
+.fnav { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-top: 1.5px solid var(--border); background: rgba(240,244,255,0.7); backdrop-filter: blur(8px); gap: 10px; }
+.btn { padding: 8px 18px; border-radius: 6px; font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; cursor: pointer; border: 1.5px solid transparent; transition: all .2s; letter-spacing: .02em; }
 .btn-ghost { background: transparent; border-color: var(--border-strong); color: #6080a0; }
 .btn-ghost:hover { border-color: var(--b600); color: var(--b700); background: var(--b50); }
 .btn-primary { background: var(--b600); color: #fff; box-shadow: 0 3px 12px rgba(17,68,160,0.3); }
@@ -157,36 +157,36 @@ input[type=range] { padding: 0; border: none; background: transparent; accent-co
 #slbl { font-size: 11px; color: #6080a0; font-family: 'IBM Plex Mono', monospace; }
 
 /* Live panel */
-.live-panel { display: flex; flex-direction: column; gap: 12px; position: sticky; top: 60px; }
-.lc { background: rgba(255,255,255,0.85); border: 1.5px solid var(--border); border-radius: 12px; padding: 18px; box-shadow: 0 4px 20px rgba(17,68,160,0.08); position: relative; backdrop-filter: blur(16px); }
-.lc::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--b500); border-radius: 10px 10px 0 0; }
-.lc-ttl { font-size: 9px; text-transform: uppercase; letter-spacing: .12em; color: var(--b600); font-weight: 700; margin-bottom: 6px; }
-.big-sc { font-family: 'IBM Plex Mono', monospace; font-size: 44px; font-weight: 600; letter-spacing: -.03em; line-height: 1; }
-.big-gr { font-size: 12px; font-weight: 600; margin-top: 4px; }
+.live-panel { display: flex; flex-direction: column; gap: 10px; position: sticky; top: 60px; }
+.lc { background: rgba(255,255,255,0.85); border: 1.5px solid var(--border); border-radius: 10px; padding: 12px; box-shadow: 0 4px 20px rgba(17,68,160,0.08); position: relative; backdrop-filter: blur(16px); }
+.lc::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--b500); border-radius: 8px 8px 0 0; }
+.lc-ttl { font-size: 8px; text-transform: uppercase; letter-spacing: .1em; color: var(--b600); font-weight: 700; margin-bottom: 4px; }
+.big-sc { font-family: 'IBM Plex Mono', monospace; font-size: 32px; font-weight: 600; letter-spacing: -.03em; line-height: 1; }
+.big-gr { font-size: 10px; font-weight: 600; margin-top: 3px; }
 .sc-high .big-sc,.sc-high .big-gr { color: #059669; }
 .sc-mid .big-sc,.sc-mid .big-gr { color: #f59e0b; }
 .sc-low .big-sc,.sc-low .big-gr { color: #dc2626; }
 .sc-zero .big-sc { color: #94a3b8; }
-.bar-list { display: flex; flex-direction: column; gap: 12px; }
-.bi { display: flex; flex-direction: column; gap: 4px; }
-.bi-hd { display: flex; justify-content: space-between; font-size: 10px; font-weight: 500; color: var(--b900); }
+.bar-list { display: flex; flex-direction: column; gap: 8px; }
+.bi { display: flex; flex-direction: column; gap: 3px; }
+.bi-hd { display: flex; justify-content: space-between; font-size: 9px; font-weight: 500; color: var(--b900); }
 .bi-hd span:last-child { color: #6080a0; font-family: 'IBM Plex Mono', monospace; }
 .bt { height: 5px; background: var(--border); border-radius: 2px; overflow: hidden; }
 .bf { height: 100%; border-radius: 2px; transition: width 1s cubic-bezier(.4,0,.2,1); }
-.ins-panel { background: var(--b900); border-radius: 10px; padding: 14px; }
-.ins-ttl { font-size: 9px; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,.4); font-weight: 700; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
-.ins-ttl::before { content:''; width:6px;height:6px;border-radius:50%;background:var(--b400);flex-shrink:0; box-shadow:0 0 0 3px rgba(59,130,246,0.2); }
-.ins-list { display: flex; flex-direction: column; gap: 8px; }
-.ins-item { display: flex; gap: 8px; font-size: 11px; line-height: 1.6; color: rgba(255,255,255,.72); }
+.ins-panel { background: var(--b900); border-radius: 8px; padding: 10px; }
+.ins-ttl { font-size: 8px; text-transform: uppercase; letter-spacing: .08em; color: rgba(255,255,255,.4); font-weight: 700; margin-bottom: 6px; display: flex; align-items: center; gap: 4px; }
+.ins-ttl::before { content:''; width:5px;height:5px;border-radius:50%;background:var(--b400);flex-shrink:0; box-shadow:0 0 0 2px rgba(59,130,246,0.2); }
+.ins-list { display: flex; flex-direction: column; gap: 6px; }
+.ins-item { display: flex; gap: 6px; font-size: 10px; line-height: 1.5; color: rgba(255,255,255,.72); }
 .ins-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--b400); flex-shrink: 0; margin-top: 6px; }
 
 /* Geo preview */
 #geoPreviewCard { display: none; }
-#geo-mini-svg { width: 100%; height: 100px; border-radius: 6px; background: var(--b50); display: block; overflow: hidden; }
-.geo-stats { display: flex; justify-content: space-between; margin-top: 8px; }
+#geo-mini-svg { width: 100%; height: 80px; border-radius: 5px; background: var(--b50); display: block; overflow: hidden; }
+.geo-stats { display: flex; justify-content: space-between; margin-top: 6px; }
 .geo-stat { text-align: center; }
-.geo-stat-v { font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 600; color: var(--b600); }
-.geo-stat-l { font-size: 8px; color: #6080a0; text-transform: uppercase; letter-spacing: .06em; margin-top: 1px; }
+.geo-stat-v { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 600; color: var(--b600); }
+.geo-stat-l { font-size: 7px; color: #6080a0; text-transform: uppercase; letter-spacing: .05em; margin-top: 1px; }
 
 /* ══════════════════════════════════════════
    RESPONSIVE — TABLET (≤1000px)
@@ -194,7 +194,8 @@ input[type=range] { padding: 0; border: none; background: transparent; accent-co
 @media (max-width: 1000px) {
   .assess-cols { grid-template-columns: 1fr; }
   .live-panel { position: static; }
-  .assess-inner { padding: 20px 16px 60px; }
+  .assess-inner { padding: 16px 12px 40px; }
+  .sec { padding: 16px 16px 12px; }
 }
 
 /* ══════════════════════════════════════════
@@ -234,44 +235,7 @@ input[type=range] { padding: 0; border: none; background: transparent; accent-co
     left: 52px !important;
     width: calc(100vw - 52px) !important;
   }
-
-  /* Dashboard grid: 2 rows of 2 + bottom row */
-  .dash {
-    grid-template-columns: repeat(4, 1fr) !important;
-    grid-template-rows: 52px auto auto auto !important;
-    padding: 6px 8px !important;
-    gap: 6px !important;
-    overflow-y: auto !important;
-    height: auto !important;
-  }
-
-  .hdr { grid-column: 1 / -1 !important; }
-
-  /* Cards: 2-col on tablet */
-  .card:not(.card-trend):not(.card-map) {
-    grid-column: span 2 !important;
-  }
-  .card-trend { grid-column: span 4 !important; }
-  .card-map   { grid-column: span 4 !important; }
-
-  /* Trend: stack meta + chart vertically */
-  .trend-body { flex-direction: column !important; gap: 8px !important; }
-  .trend-meta { width: 100% !important; flex-direction: row !important; justify-content: space-around !important; gap: 8px !important; }
-  .trend-chart { margin-right: 0 !important; height: 160px !important; }
-  .trend-end-labels { display: none !important; }
-
-  /* Header KPIs: tablet spacing */
-  .hdr-kpi-v { font-size: 14px !important; }
-  .hdr-kpi-l { font-size: 8px !important; }
-  .hdr-badge { font-size: 10px !important; padding: 6px 12px !important; }
-  .hdr-kpi { padding: 8px 14px !important; }
-
-  /* Donut: shrink SVG */
-  #donut-svg { width: 140px !important; height: 140px !important; }
-  .donut-body { gap: 8px !important; }
-
-  /* Radar legend hidden on tablet to give radar more space */
-  #radar-leg { display: none !important; }
+  /* Dashboard grid layout is NOT overridden — fitDash() scales the fixed canvas */
 }
 
 /* ══════════════════════════════════════════
@@ -306,7 +270,6 @@ input[type=range] { padding: 0; border: none; background: transparent; accent-co
   #outputSidebar .sb-icon { width: 20px !important; }
   #outputSidebar .sb-label { display: none !important; }
   #outputSidebar .sb-bottom-label { display: none !important; }
-  /* "New" and "Download" buttons — show in row too */
   #outputSidebar > button { flex: 1 !important; margin: 0 2px !important; opacity: 1 !important; }
 
   /* Charts/report views: full width, leave room for bottom nav */
@@ -315,58 +278,7 @@ input[type=range] { padding: 0; border: none; background: transparent; accent-co
     width: 100vw !important;
     height: calc(100vh - 52px) !important;
   }
-
-  /* Dashboard grid: single column */
-  .dash {
-    grid-template-columns: 1fr !important;
-    grid-template-rows: auto !important;
-    padding: 6px 6px 60px !important;
-    gap: 8px !important;
-    overflow-y: auto !important;
-    height: auto !important;
-  }
-
-  .hdr { grid-column: 1 / -1 !important; border-radius: 8px !important; min-height: 60px !important; flex-wrap: wrap !important; padding: 8px 12px !important; gap: 4px !important; }
-  .hdr-stats { flex-wrap: wrap !important; gap: 4px !important; justify-content: flex-end !important; }
-  .hdr-kpi { padding: 0 8px !important; }
-  .hdr-kpi-v { font-size: 11px !important; }
-  .hdr-kpi-l { font-size: 5.5px !important; }
-  .hdr-badge { font-size: 8px !important; margin-left: 6px !important; }
-  .hdr-brand { font-size: 10px !important; }
-  .hdr-title { font-size: 10px !important; }
-  .hdr-actions { gap: 4px !important; margin-left: 8px !important; }
-  .hdr-btn { padding: 5px 8px !important; font-size: 9px !important; }
-
-  /* All cards: full width */
-  .card, .card-trend, .card-map {
-    grid-column: 1 / -1 !important;
-    min-height: 240px !important;
-    padding: 14px 16px !important;
-  }
-  .card-map { min-height: 280px !important; }
-  .card-trend { min-height: 260px !important; }
-  .card-head { margin-bottom: 12px; padding-bottom: 10px; }
-  .card-title { font-size: 10px; }
-  .card-tag { font-size: 8.5px; padding: 3px 8px; }
-
-  /* Donut: smaller with better spacing */
-  #donut-svg { width: 120px !important; height: 120px !important; }
-  .donut-body { gap: 12px !important; }
-  .dleg { gap: 6px !important; padding: 5px 6px !important; grid-template-columns: 10px minmax(60px,1fr) minmax(45px,auto) 35px !important; }
-  .dleg-nm { font-size: 10px !important; }
-  .dleg-val { font-size: 9px !important; }
-  .dleg-pct { font-size: 8.5px !important; width: 35px !important; }
-
-  /* Trend: stacked with better spacing */
-  .trend-body { flex-direction: column !important; gap: 10px !important; }
-  .trend-meta { width: 100% !important; flex-direction: row !important; justify-content: space-around !important; flex-wrap: wrap !important; gap: 10px !important; }
-  .trend-chart { margin-right: 0 !important; min-height: 140px !important; }
-  .trend-end-labels { display: none !important; }
-  .tm-label { font-size: 8px !important; }
-  .tm-value { font-size: 15px !important; margin-top: 3px !important; }
-
-  /* Radar legend hidden */
-  #radar-leg { display: none !important; }
+  /* Dashboard grid layout is NOT overridden — fitDash() scales the fixed canvas */
 
   /* Popup: full screen on mobile */
   .pop { width: 95% !important; max-width: 95% !important; border-radius: 10px !important; }
@@ -413,38 +325,41 @@ input[type=range] { padding: 0; border: none; background: transparent; accent-co
 }
 .dash {
   display: grid;
-  width: 100%; min-height: 100%;
-  grid-template-rows: 100px 1fr 1fr;
+  /* Fixed "design canvas" — JS scales this to fit any viewport */
+  width: 1800px; height: 960px;
+  grid-template-rows: 88px 1fr 1fr;
   grid-template-columns: repeat(6, 1fr);
   gap: 16px;
   padding: 16px 20px;
+  transform-origin: top left;
+  will-change: transform;
 }
 
 /* Header */
 .hdr {
   grid-column: 1/-1;
   background: var(--b900);
-  border-radius: 10px;
+  border-radius: 12px;
   display: flex; align-items: center; justify-content: space-between;
-  padding: 18px 28px;
+  padding: 12px 28px;
   position: relative; overflow: visible;
-  box-shadow: 0 2px 12px rgba(6,18,40,0.4);
-  min-height: 100px;
-  gap: 28px;
+  box-shadow: 0 2px 16px rgba(6,18,40,0.4);
+  min-height: 0;
+  gap: 24px;
 }
 .hdr::after { content:''; position:absolute; inset:0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233b82f6' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); pointer-events:none; }
 .hdr-left { display: flex; align-items: center; min-width: 0; }
-.hdr-brand { font-size: 13px; font-weight: 700; letter-spacing: .16em; color: #fff; text-transform: uppercase; white-space: nowrap; }
-.hdr-div { width: 1px; height: 32px; background: rgba(255,255,255,.18); margin: 0 22px; flex-shrink: 0; }
-.hdr-title { font-size: 14px; font-weight: 600; color: rgba(255,255,255,.95); letter-spacing: .02em; }
-.hdr-sub { font-size: 10px; font-weight: 400; color: var(--b300); text-transform: uppercase; letter-spacing: .09em; margin-top: 5px; white-space: nowrap; }
-.hdr-stats { display: flex; align-items: center; flex-shrink: 0; gap: 8px; }
-.hdr-kpi { display: flex; flex-direction: column; align-items: flex-end; padding: 10px 22px; border-left: 1px solid rgba(255,255,255,.15); white-space: nowrap; }
-.hdr-kpi-v { font-size: 18px; font-weight: 700; color: #fff; font-family: 'IBM Plex Mono', monospace; line-height: 1.3; }
-.hdr-kpi-l { font-size: 9.5px; color: var(--b300); text-transform: uppercase; letter-spacing: .1em; margin-top: 6px; white-space: nowrap; }
-.hdr-badge { margin-left: 18px; padding: 8px 18px; border: 1px solid rgba(147,197,253,.35); border-radius: 22px; background: rgba(59,130,246,0.12); font-size: 12px; font-weight: 700; color: var(--b200); letter-spacing: .07em; white-space: nowrap; }
-.hdr-actions { display: flex; gap: 8px; margin-left: 16px; }
-.hdr-btn { padding: 6px 14px; border-radius: 6px; font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; cursor: pointer; border: none; letter-spacing: .04em; transition: all .2s; }
+.hdr-brand { font-size: 14px; font-weight: 700; letter-spacing: .16em; color: #fff; text-transform: uppercase; white-space: nowrap; }
+.hdr-div { width: 1px; height: 36px; background: rgba(255,255,255,.18); margin: 0 26px; flex-shrink: 0; }
+.hdr-title { font-size: 15px; font-weight: 600; color: rgba(255,255,255,.95); letter-spacing: .02em; }
+.hdr-sub { font-size: 11px; font-weight: 400; color: var(--b300); text-transform: uppercase; letter-spacing: .09em; margin-top: 6px; white-space: nowrap; }
+.hdr-stats { display: flex; align-items: center; flex-shrink: 0; gap: 10px; }
+.hdr-kpi { display: flex; flex-direction: column; align-items: flex-end; padding: 12px 26px; border-left: 1px solid rgba(255,255,255,.15); white-space: nowrap; }
+.hdr-kpi-v { font-size: 20px; font-weight: 700; color: #fff; font-family: 'IBM Plex Mono', monospace; line-height: 1.3; }
+.hdr-kpi-l { font-size: 10px; color: var(--b300); text-transform: uppercase; letter-spacing: .1em; margin-top: 7px; white-space: nowrap; }
+.hdr-badge { margin-left: 20px; padding: 10px 20px; border: 1px solid rgba(147,197,253,.35); border-radius: 24px; background: rgba(59,130,246,0.12); font-size: 13px; font-weight: 700; color: var(--b200); letter-spacing: .07em; white-space: nowrap; }
+.hdr-actions { display: flex; gap: 10px; margin-left: 18px; }
+.hdr-btn { padding: 8px 16px; border-radius: 7px; font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; cursor: pointer; border: none; letter-spacing: .04em; transition: all .2s; }
 .hdr-btn-ghost { background: rgba(255,255,255,.08); color: rgba(255,255,255,.8); border: 1px solid rgba(255,255,255,.15); }
 .hdr-btn-ghost:hover { background: rgba(255,255,255,.14); color: #fff; }
 .hdr-btn-solid { background: var(--b500); color: #fff; box-shadow: 0 2px 8px rgba(26,86,219,0.4); }
@@ -454,81 +369,81 @@ input[type=range] { padding: 0; border: none; background: transparent; accent-co
 .card {
   background: rgba(255,255,255,0.85);
   border: 1.5px solid rgba(255,255,255,0.95);
-  border-radius: 12px;
-  padding: 16px 18px; display: flex; flex-direction: column;
+  border-radius: 14px;
+  padding: 20px 22px; display: flex; flex-direction: column;
   position: relative; overflow: visible;
-  box-shadow: 0 2px 16px rgba(17,68,160,0.08);
+  box-shadow: 0 4px 20px rgba(17,68,160,0.10);
   cursor: pointer; transition: box-shadow .2s, border-color .2s, transform .15s;
   backdrop-filter: blur(16px);
 }
 .card:hover { box-shadow: 0 8px 28px rgba(17,68,160,0.16); border-color: rgba(147,197,253,0.7); transform: translateY(-2px); }
 .card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--b500); border-radius: 12px 12px 0 0; }
-.card-head { display: flex; align-items: center; justify-content: space-between; border-bottom: 1.5px solid var(--border); padding-bottom: 12px; margin-bottom: 14px; flex-shrink: 0; gap: 12px; }
-.card-title { font-size: 11px; font-weight: 700; color: var(--b900); text-transform: uppercase; letter-spacing: .08em; white-space: nowrap; }
-.card-tag { font-size: 9px; color: var(--b600); background: var(--b50); border-radius: 5px; padding: 4px 10px; text-transform: uppercase; letter-spacing: .07em; border: 1px solid var(--b200); white-space: nowrap; flex-shrink: 0; }
+.card-head { display: flex; align-items: center; justify-content: space-between; border-bottom: 1.5px solid var(--border); padding-bottom: 14px; margin-bottom: 16px; flex-shrink: 0; gap: 14px; }
+.card-title { font-size: 12px; font-weight: 700; color: var(--b900); text-transform: uppercase; letter-spacing: .08em; white-space: nowrap; }
+.card-tag { font-size: 10px; color: var(--b600); background: var(--b50); border-radius: 6px; padding: 5px 12px; text-transform: uppercase; letter-spacing: .07em; border: 1px solid var(--b200); white-space: nowrap; flex-shrink: 0; }
 
 /* Chart wrapper */
 .cw { flex: 1; position: relative; min-height: 0; overflow: visible; }
 .cw canvas { position: absolute; inset: 0; width: 100% !important; height: 100% !important; }
 
 /* Donut card */
-.donut-body { flex:1; display:flex; align-items:center; gap:20px; min-height:0; overflow:visible; padding:8px 10px; }
+.donut-body { flex:1; display:flex; align-items:center; gap:24px; min-height:0; overflow:visible; padding:12px 14px; }
 #donut-card { overflow: visible; }
-#donut-svg { flex-shrink:0; display:block; width:190px; height:190px; overflow:visible; }
-.donut-legend { flex:1; display:flex; flex-direction:column; justify-content:center; gap:8px; overflow:visible; }
-.dleg { display:grid; grid-template-columns:12px minmax(70px,1fr) minmax(52px,auto) 40px; align-items:center; gap:8px; padding:6px 8px; border-radius:7px; cursor:default; transition: background .15s; }
+#donut-svg { flex-shrink:0; display:block; width:220px; height:220px; overflow:visible; }
+.donut-legend { flex:1; display:flex; flex-direction:column; justify-content:center; gap:10px; overflow:visible; }
+.dleg { display:grid; grid-template-columns:14px minmax(75px,1fr) minmax(60px,auto) 45px; align-items:center; gap:10px; padding:8px 10px; border-radius:8px; cursor:default; transition: background .15s; }
 .dleg:hover { background:var(--b50); }
-.dleg-sw { width:12px; height:12px; border-radius:3px; flex-shrink:0; }
-.dleg-nm { font-size:11px; color:#1e3050; white-space:normal; word-wrap:break-word; overflow-wrap:break-word; font-weight:500; }
-.dleg-val { font-size:10px; font-weight:700; color:var(--b900); font-family:'IBM Plex Mono',monospace; white-space:nowrap; }
-.dleg-pct { font-size:9.5px; color:#6080a0; font-family:'IBM Plex Mono',monospace; width:40px; text-align:right; white-space:nowrap; }
+.dleg-sw { width:14px; height:14px; border-radius:4px; flex-shrink:0; }
+.dleg-nm { font-size:12px; color:#1e3050; white-space:normal; word-wrap:break-word; overflow-wrap:break-word; font-weight:500; }
+.dleg-val { font-size:11px; font-weight:700; color:var(--b900); font-family:'IBM Plex Mono',monospace; white-space:nowrap; }
+.dleg-pct { font-size:10px; color:#6080a0; font-family:'IBM Plex Mono',monospace; width:45px; text-align:right; white-space:nowrap; }
 
 /* Radar card side legend */
-#radar-leg { flex:0 0 100px; display:flex; flex-direction:column; justify-content:center; gap:6px; padding-left:10px; border-left:1px solid var(--border); overflow:visible; }
+#radar-leg { flex:0 0 120px; display:flex; flex-direction:column; justify-content:center; gap:8px; padding-left:14px; border-left:1px solid var(--border); overflow:visible; }
 
 /* Trend card */
 .card-trend { grid-column: span 3; overflow: visible !important; }
-.trend-body { flex:1; display:flex; gap:18px; min-height:0; overflow:visible; }
-.trend-meta { flex-shrink:0; width:130px; display:flex; flex-direction:column; justify-content:center; gap:18px; }
-.tm-label { font-size:8.5px; color:#6080a0; text-transform:uppercase; letter-spacing:.08em; white-space:nowrap; font-weight:600; }
-.tm-value { font-size:17px; font-weight:700; color:var(--b600); font-family:'IBM Plex Mono',monospace; line-height:1.2; margin-top:4px; white-space:nowrap; }
+.trend-body { flex:1; display:flex; gap:22px; min-height:0; overflow:visible; }
+.trend-meta { flex-shrink:0; width:160px; display:flex; flex-direction:column; justify-content:center; gap:22px; }
+.tm-label { font-size:9px; color:#6080a0; text-transform:uppercase; letter-spacing:.08em; white-space:nowrap; font-weight:600; }
+.tm-value { font-size:19px; font-weight:700; color:var(--b600); font-family:'IBM Plex Mono',monospace; line-height:1.2; margin-top:5px; white-space:nowrap; }
 .tm-value.teal { color:var(--b400); }
 .tm-value.green { color:#059669; }
 /* trend-chart: right margin reserves space for HTML end-labels outside canvas */
-.trend-chart { flex:1; min-width:0; position:relative; margin-right:128px; overflow:visible; }
+.trend-chart { flex:1; min-width:0; position:relative; margin-right:140px; overflow:visible; }
 .trend-chart canvas { position:absolute; inset:0; width:100% !important; height:100% !important; }
 /* End-label tags rendered as HTML — never clipped */
-.trend-end-labels { position:absolute; top:0; right:-128px; width:124px; height:100%; pointer-events:none; }
-.tel { position:absolute; right:0; transform:translateY(-50%); display:flex; align-items:center; gap:5px; white-space:nowrap; }
-.tel-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
-.tel-txt { font-size:8.5px; font-weight:700; font-family:'Inter',sans-serif; background:rgba(255,255,255,0.97); border:1px solid; border-radius:4px; padding:4px 8px; line-height:1.4; max-width:120px; white-space:nowrap; }
+.trend-end-labels { position:absolute; top:0; right:-140px; width:136px; height:100%; pointer-events:none; }
+.tel { position:absolute; right:0; transform:translateY(-50%); display:flex; align-items:center; gap:6px; white-space:nowrap; }
+.tel-dot { width:9px; height:9px; border-radius:50%; flex-shrink:0; }
+.tel-txt { font-size:9.5px; font-weight:700; font-family:'Inter',sans-serif; background:rgba(255,255,255,0.97); border:1px solid; border-radius:5px; padding:5px 10px; line-height:1.4; max-width:130px; white-space:nowrap; }
 
 /* Map card */
 .card-map { grid-column: span 3; }
-.map-wrap { flex:1; position:relative; min-height:0; border-radius:10px; background:var(--b100); overflow:hidden; }
+.map-wrap { flex:1; position:relative; min-height:0; border-radius:12px; background:var(--b100); overflow:hidden; }
 #worldMap { display:block; position:absolute; top:0; left:0; width:100%; height:100%; }
-.map-tt { position:absolute; background:var(--b900); color:var(--b200); font-size:11px; padding:8px 12px; border-radius:6px; pointer-events:none; opacity:0; transition:opacity .12s; white-space:nowrap; z-index:99; border-left:2px solid var(--b400); line-height:1.6; box-shadow:0 4px 16px rgba(0,0,0,.25); }
+.map-tt { position:absolute; background:var(--b900); color:var(--b200); font-size:12px; padding:10px 14px; border-radius:7px; pointer-events:none; opacity:0; transition:opacity .12s; white-space:nowrap; z-index:99; border-left:3px solid var(--b400); line-height:1.6; box-shadow:0 6px 20px rgba(0,0,0,.3); }
 /* Map drill-down back button */
-.map-back-btn { position:absolute; top:8px; left:8px; z-index:10; background:rgba(10,20,50,.85); border:1px solid rgba(59,130,246,.4); color:var(--b200); font-size:9px; font-weight:600; padding:4px 10px; border-radius:5px; cursor:pointer; backdrop-filter:blur(4px); display:none; transition:all .2s; letter-spacing:.06em; text-transform:uppercase; }
+.map-back-btn { position:absolute; top:10px; left:10px; z-index:10; background:rgba(10,20,50,.85); border:1px solid rgba(59,130,246,.4); color:var(--b200); font-size:10px; font-weight:600; padding:6px 12px; border-radius:6px; cursor:pointer; backdrop-filter:blur(4px); display:none; transition:all .2s; letter-spacing:.06em; text-transform:uppercase; }
 .map-back-btn:hover { background:rgba(17,68,160,.9); color:#fff; }
-.map-drill-info { position:absolute; bottom:8px; left:8px; right:8px; z-index:10; display:none; }
-.map-drill-bar { background:rgba(6,18,40,.9); border:1px solid rgba(59,130,246,.2); border-radius:8px; padding:8px 12px; display:flex; gap:16px; align-items:center; backdrop-filter:blur(6px); flex-wrap:wrap; }
-.map-drill-kpi { display:flex; flex-direction:column; gap:1px; }
-.map-drill-kpi-v { font-size:12px; font-weight:700; color:#fff; font-family:'IBM Plex Mono',monospace; }
-.map-drill-kpi-l { font-size:7px; color:rgba(147,197,253,.5); text-transform:uppercase; letter-spacing:.07em; }
+.map-drill-info { position:absolute; bottom:10px; left:10px; right:10px; z-index:10; display:none; }
+.map-drill-bar { background:rgba(6,18,40,.9); border:1px solid rgba(59,130,246,.2); border-radius:10px; padding:12px 16px; display:flex; gap:20px; align-items:center; backdrop-filter:blur(6px); flex-wrap:wrap; }
+.map-drill-kpi { display:flex; flex-direction:column; gap:2px; }
+.map-drill-kpi-v { font-size:14px; font-weight:700; color:#fff; font-family:'IBM Plex Mono',monospace; }
+.map-drill-kpi-l { font-size:8px; color:rgba(147,197,253,.5); text-transform:uppercase; letter-spacing:.07em; }
 
 /* Popup */
 .ov { display:none; position:fixed; inset:0; background:rgba(6,18,40,.65); backdrop-filter:blur(6px); z-index:999; align-items:center; justify-content:center; }
 .ov.open { display:flex; animation:fadeUp .2s ease; }
-.pop { background:rgba(255,255,255,0.96); border-radius:10px; max-width:500px; width:92%; overflow:hidden; box-shadow:0 24px 60px rgba(6,18,40,.3); border:1.5px solid var(--border); }
-.ph { background:var(--b900); padding:14px 18px; display:flex; align-items:center; justify-content:space-between; }
-.pt { font-size:14px; font-weight:700; color:#fff; letter-spacing:-.01em; }
-.px { width:28px; height:28px; border-radius:6px; border:1px solid rgba(255,255,255,.2); background:transparent; color:rgba(255,255,255,.7); font-size:14px; cursor:pointer; display:grid; place-items:center; transition:all .15s; }
+.pop { background:rgba(255,255,255,0.96); border-radius:12px; max-width:540px; width:92%; overflow:hidden; box-shadow:0 28px 68px rgba(6,18,40,.35); border:1.5px solid var(--border); }
+.ph { background:var(--b900); padding:16px 20px; display:flex; align-items:center; justify-content:space-between; }
+.pt { font-size:15px; font-weight:700; color:#fff; letter-spacing:-.01em; }
+.px { width:32px; height:32px; border-radius:7px; border:1px solid rgba(255,255,255,.2); background:transparent; color:rgba(255,255,255,.7); font-size:16px; cursor:pointer; display:grid; place-items:center; transition:all .15s; }
 .px:hover { background:rgba(255,255,255,.1); color:#fff; }
-.pb { padding:16px; max-height:70vh; overflow-y:auto; display:flex; flex-direction:column; gap:10px; }
-.pi-block { padding:13px 15px; border-radius:6px; background:var(--b50); border:1.5px solid var(--b200); }
-.pi-lbl { font-size:8.5px; text-transform:uppercase; letter-spacing:.1em; color:var(--b600); font-weight:700; margin-bottom:6px; }
-.pi-txt { font-size:12px; line-height:1.75; color:var(--b900); }
+.pb { padding:20px; max-height:75vh; overflow-y:auto; display:flex; flex-direction:column; gap:12px; }
+.pi-block { padding:15px 18px; border-radius:8px; background:var(--b50); border:1.5px solid var(--b200); }
+.pi-lbl { font-size:9px; text-transform:uppercase; letter-spacing:.1em; color:var(--b600); font-weight:700; margin-bottom:8px; }
+.pi-txt { font-size:13px; line-height:1.8; color:var(--b900); }
 .pi-txt strong { color:var(--b500); }
 
 /* Loader dots */
@@ -539,7 +454,7 @@ input[type=range] { padding: 0; border: none; background: transparent; accent-co
 @media print {
   #assessShell,#loaderShell { display:none !important; }
   #dashShell { display:block !important; height:auto; overflow:visible; }
-  .dash { height:auto; }
+  .dash { height:auto; width:100%; transform:none !important; }
 }
 
 /* ══ SIDEBAR STYLES ══ */
@@ -557,7 +472,7 @@ input[type=range] { padding: 0; border: none; background: transparent; accent-co
   margin-left: 10px;
   white-space: nowrap;
 }
-#outputSidebar:hover .sb-label {
+ #outputSidebar.sb-open .sb-label {
   opacity: 1;
   max-width: 140px;
 }
@@ -575,7 +490,7 @@ input[type=range] { padding: 0; border: none; background: transparent; accent-co
   margin-left: 8px;
   white-space: nowrap;
 }
-#outputSidebar:hover .sb-bottom-label { opacity:1; max-width:120px; }
+ #outputSidebar.sb-open .sb-bottom-label { opacity:1; max-width:120px; }
 #outputSidebar .sb-btn {
   width: calc(100% - 16px) !important;
   justify-content: flex-start !important;
@@ -595,7 +510,7 @@ input[type=range] { padding: 0; border: none; background: transparent; accent-co
   font-size: 13px; font-weight: 700; color: #fff;
   letter-spacing: .04em; white-space: nowrap;
 }
-#outputSidebar:hover .sb-logo-text { opacity:1; max-width:140px; }
+ #outputSidebar.sb-open .sb-logo-text { opacity:1; max-width:140px; }
 #outputSidebar .sb-divider {
   width: calc(100% - 20px); height: 1px;
   background: rgba(255,255,255,0.12); margin: 6px 10px;
@@ -607,13 +522,13 @@ input[type=range] { padding: 0; border: none; background: transparent; accent-co
   letter-spacing: .12em; text-transform: uppercase;
   padding-left: 14px; white-space: nowrap;
 }
-#outputSidebar:hover .sb-section-lbl { opacity:1; max-width:140px; }
+#outputSidebar.sb-open .sb-section-lbl { opacity:1; max-width:140px; }
 
 /* Dashboard layout: sidebar + content in a row */
 #dashShell { display: none; } /* controlled by JS */
 #dashShell.active { display: flex !important; flex-direction: row; }
 #viewCharts { flex:1; height:100%; min-width:0; display:flex; flex-direction:column; overflow:hidden; }
-#viewCharts .dash { flex:1; width:100%; height:100%; }
+#viewCharts .dash { width:1800px; height:960px; flex-shrink:0; }
 #viewReport { flex:1; overflow-y:auto; background:var(--surface); min-width:0; }
 
 /* Sidebar hover expand */
@@ -622,16 +537,62 @@ input[type=range] { padding: 0; border: none; background: transparent; accent-co
   overflow: hidden;
   white-space: nowrap;
 }
-#outputSidebar:hover {
+/* AFTER */
+#outputSidebar.sb-open {
   width: 200px !important;
 }
-#outputSidebar:hover ~ #viewCharts,
-#outputSidebar:hover ~ * #viewCharts { 
-  /* viewCharts is not a sibling so we handle via JS resize */ 
+/* Toggle button */
+.sb-toggle {
+  width: calc(100% - 16px); height: 36px;
+  margin: 0 8px 4px; padding: 0 14px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.06);
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.18s;
+}
+.sb-toggle:hover { background: rgba(255,255,255,0.15); }
+.sb-toggle svg { transition: transform 0.3s; }
+#outputSidebar.sb-open .sb-toggle svg { transform: rotate(180deg); }
+
+/* ══ ZOOM — handled by fitDash() JS scaling ══ */
+html, body {
+  width: 100%;
+  height: 100%;
 }
 </style>
 </head>
 <body>
+
+<!-- ══ ZOOM DETECTION AND NORMALIZATION ══ -->
+<script>
+  // Detect and normalize zoom level
+  let currentZoom = 1;
+  
+  function detectZoom() {
+    const div = document.createElement('div');
+    div.style.width = '100px';
+    document.body.appendChild(div);
+    const boxWidth = div.getBoundingClientRect().width;
+    document.body.removeChild(div);
+    
+    currentZoom = 100 / boxWidth;
+    document.documentElement.style.setProperty('--current-zoom', currentZoom);
+  }
+  
+  // Detect zoom on load and on resize
+  window.addEventListener('load', detectZoom);
+  window.addEventListener('resize', detectZoom);
+  window.addEventListener('wheel', (e) => {
+    if (e.ctrlKey || e.metaKey) {
+      setTimeout(detectZoom, 50);
+    }
+  });
+  
+  // Initial zoom detection
+  setTimeout(detectZoom, 100);
+</script>
 
 <!-- ═══ CURSOR-REACTIVE CANVAS BACKGROUND ═══ -->
 <canvas id="bgCanvas"></canvas>
@@ -1075,6 +1036,11 @@ input[type=range] { padding: 0; border: none; background: transparent; accent-co
   <!-- SIDEBAR — collapses to 64px, expands to 180px on hover -->
   <div id="outputSidebar" style="position:fixed;left:0;top:0;height:100vh;width:64px;background:#061228;display:flex;flex-direction:column;padding:12px 0;gap:6px;flex-shrink:0;z-index:20;box-shadow:2px 0 20px rgba(6,18,40,0.5);border-right:1px solid rgba(59,130,246,0.12);">
 
+    <!-- Toggle button -->
+    <button class="sb-toggle" onclick="toggleSidebar()" title="Toggle sidebar">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+    
     <!-- Logo -->
     <div class="sb-logo" style="margin-bottom:10px;">
       <img src="/infopace-logo.jpg" alt="Infopace" style="width:36px;height:36px;border-radius:8px;object-fit:contain;background:#fff;padding:2px;flex-shrink:0;box-shadow:0 2px 8px rgba(26,86,219,0.4);"/>
@@ -1127,7 +1093,7 @@ input[type=range] { padding: 0; border: none; background: transparent; accent-co
   </div><!-- end outputSidebar -->
 
   <!-- VIEW 1: CHARTS DASHBOARD -->
-  <div id="viewCharts" style="position:fixed;left:64px;top:0;width:calc(100vw - 64px);height:100vh;overflow:auto;display:flex;flex-direction:column;transition:left 0.3s cubic-bezier(0.4,0,0.2,1),width 0.3s cubic-bezier(0.4,0,0.2,1);">
+  <div id="viewCharts" style="position:fixed;left:64px;top:0;width:calc(100vw - 64px);height:100vh;overflow:hidden;display:flex;flex-direction:column;transition:left 0.3s cubic-bezier(0.4,0,0.2,1),width 0.3s cubic-bezier(0.4,0,0.2,1);">
 <div class="dash">
 
   <!-- HEADER -->
@@ -1241,41 +1207,51 @@ input[type=range] { padding: 0; border: none; background: transparent; accent-co
 </div>
 
 <script>
-/* ══════════════════════════════════════════════════════
-   SIDEBAR HOVER SYNC — keep content panels in sync
-══════════════════════════════════════════════════════ */
+/* ══ SIDEBAR TOGGLE ══ */
 (function(){
-  const SB_COLLAPSED = 64, SB_EXPANDED = 200;
-  const MOBILE_BP = 768;
+  var SB_COLLAPSED = 64, SB_EXPANDED = 200;
+  var MOBILE_BP = 768;
+  var isOpen = false;
 
   function isMobile() { return window.innerWidth <= MOBILE_BP; }
 
-  function syncViews(w) {
-    const charts = document.getElementById('viewCharts');
-    const report = document.getElementById('viewReport');
-    if (isMobile()) {
-      // Mobile: sidebar is at the bottom, views take full width
-      if (charts) { charts.style.left = '0'; charts.style.width = '100vw'; charts.style.height = 'calc(100vh - 52px)'; charts.style.top = '0'; }
-      if (report) { report.style.left = '0'; report.style.width = '100vw'; report.style.height = 'calc(100vh - 52px)'; report.style.top = '0'; }
+  window.toggleSidebar = function() {
+    var sb = document.getElementById('outputSidebar');
+    if (!sb) return;
+    isOpen = !isOpen;
+    if (isOpen) {
+      sb.classList.add('sb-open');
     } else {
-      // Tablet/Desktop: sidebar on the left
-      const sbW = window.innerWidth <= 1024 ? 52 : w;
-      if (charts) { charts.style.left = sbW + 'px'; charts.style.width = 'calc(100vw - ' + sbW + 'px)'; charts.style.height = '100vh'; charts.style.top = '0'; }
-      if (report) { report.style.left = sbW + 'px'; report.style.width = 'calc(100vw - ' + sbW + 'px)'; report.style.height = '100vh'; report.style.top = '0'; }
+      sb.classList.remove('sb-open');
+    }
+    syncViews();
+    // Re-fit dashboard after sidebar width changes
+    if (typeof fitDash === 'function') setTimeout(fitDash, 350);
+  };
+
+  function syncViews() {
+    var charts = document.getElementById('viewCharts');
+    var report = document.getElementById('viewReport');
+    if (isMobile()) {
+      if (charts) { charts.style.left='0'; charts.style.width='100vw'; charts.style.height='calc(100vh - 52px)'; charts.style.top='0'; }
+      if (report) { report.style.left='0'; report.style.width='100vw'; report.style.height='calc(100vh - 52px)'; report.style.top='0'; }
+    } else {
+      var sbW = isOpen ? SB_EXPANDED : SB_COLLAPSED;
+      if (window.innerWidth <= 1024) sbW = 52;
+      if (charts) { charts.style.left=sbW+'px'; charts.style.width='calc(100vw - '+sbW+'px)'; charts.style.height='100vh'; charts.style.top='0'; }
+      if (report) { report.style.left=sbW+'px'; report.style.width='calc(100vw - '+sbW+'px)'; report.style.height='100vh'; report.style.top='0'; }
     }
   }
 
   document.addEventListener('DOMContentLoaded', function() {
-    const sb = document.getElementById('outputSidebar');
-    if (!sb) return;
-    sb.addEventListener('mouseenter', function() { if (!isMobile()) syncViews(SB_EXPANDED); });
-    sb.addEventListener('mouseleave', function() { syncViews(SB_COLLAPSED); });
-    // Sync on resize
-    window.addEventListener('resize', function() { syncViews(SB_COLLAPSED); });
-    // Initial sync
-    syncViews(SB_COLLAPSED);
+    syncViews();
+  });
+  window.addEventListener('resize', function() {
+    syncViews();
+    if (typeof fitDash === 'function') setTimeout(fitDash, 100);
   });
 })();
+
 
 /* ══════════════════════════════════════════════════════
    API key is stored in server.js — no key needed here
@@ -3082,11 +3058,63 @@ function showReportPaywall(){
           ].map(f => `<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #f0f4ff;font-size:13px;color:#1e3050;">${f}</div>`).join('')}
         </div>
 
-        <!-- CTA buttons -->
-        <a href="mailto:infopaceai@gmail.com?subject=Full Report Access Request&body=Hi, I'd like access to the full market intelligence report for my assessment."
-           style="display:block;background:#1144a0;color:#fff;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;padding:14px 28px;border-radius:6px;text-decoration:none;margin-bottom:12px;letter-spacing:.04em;">
-          📩 Request Full Report Access
-        </a>
+        <!-- State 1: Button -->
+<div id="rptBtnState">
+  <button onclick="showReportEmailForm()"
+    style="width:100%;display:block;background:#1144a0;color:#fff;font-family:'Inter',sans-serif;
+      font-size:13px;font-weight:700;padding:14px 28px;border-radius:6px;border:none;
+      cursor:pointer;letter-spacing:.04em;margin-bottom:12px;">
+    📩 Request Full Report Access
+  </button>
+</div>
+
+<!-- State 2: Email input -->
+<div id="rptInputState" style="display:none;margin-bottom:12px;">
+  <div style="background:#fff;border:1.5px solid #dbeafe;border-radius:8px;padding:18px 20px;">
+    <div style="font-size:11px;font-weight:700;color:#6080a0;text-transform:uppercase;
+      letter-spacing:.1em;margin-bottom:10px;">Enter email to receive the report</div>
+    <div style="display:flex;gap:8px;">
+      <input type="email" id="rptEmailInput" placeholder="you@company.com"
+        onkeydown="if(event.key==='Enter')submitReportEmail()"
+        style="flex:1;padding:10px 14px;border:1.5px solid #dbeafe;border-radius:6px;
+          font-size:13px;font-family:'Inter',sans-serif;color:#061228;outline:none;min-width:0;" />
+      <button onclick="submitReportEmail()"
+        style="padding:10px 18px;background:#1144a0;color:#fff;border:none;border-radius:6px;
+          font-family:'Inter',sans-serif;font-size:12px;font-weight:700;cursor:pointer;
+          white-space:nowrap;letter-spacing:.04em;">
+        Send →
+      </button>
+    </div>
+    <div id="rptEmailErr"
+      style="color:#dc2626;font-size:11px;margin-top:8px;display:none;"></div>
+  </div>
+  <button onclick="hideReportEmailForm()"
+    style="width:100%;background:transparent;border:none;color:#94a3b8;
+      font-size:11px;cursor:pointer;padding:6px;margin-top:2px;">
+    cancel
+  </button>
+</div>
+
+<!-- State 3: Sending -->
+<div id="rptLoadingState"
+  style="display:none;padding:18px;background:#f8faff;border:1.5px solid #dbeafe;
+    border-radius:8px;text-align:center;margin-bottom:12px;">
+  <div style="font-size:13px;color:#1144a0;">⏳ Sending your report…</div>
+</div>
+
+<!-- State 4: Success -->
+<div id="rptSuccessState"
+  style="display:none;padding:20px;background:#f0fdf4;border:1.5px solid #bbf7d0;
+    border-radius:8px;text-align:center;margin-bottom:12px;">
+  <div style="font-size:22px;margin-bottom:8px;">✅</div>
+  <div style="font-size:14px;font-weight:700;color:#059669;">Report sent!</div>
+  <div id="rptSentTo" style="font-size:12px;color:#6080a0;margin-top:4px;"></div>
+  <button onclick="resetReportEmailForm()"
+    style="margin-top:12px;background:transparent;border:1px solid #bbf7d0;
+      color:#059669;font-size:11px;padding:5px 14px;border-radius:4px;cursor:pointer;">
+    Send to another email
+  </button>
+</div>
         <button onclick="switchView('charts')"
           style="width:100%;background:transparent;border:1px solid rgba(17,68,160,0.14);color:#6080a0;font-family:'Inter',sans-serif;font-size:12px;font-weight:600;padding:12px 28px;border-radius:6px;cursor:pointer;letter-spacing:.03em;">
           ← Back to Dashboard
@@ -4514,6 +4542,9 @@ else if(/^\d+(\.\d+)?$/.test(dispVal.trim())){
   switchView('charts');
   // report built on demand when user clicks Report button
   window.scrollTo({top:0,behavior:'smooth'});
+  // Ensure scale-to-fit runs after all chart animations complete
+  setTimeout(fitDash, 200);
+  setTimeout(fitDash, 800);
 }
 
 /* ══════════════════════════════════════════════════════
@@ -4756,13 +4787,46 @@ function switchView(v){
       Object.values(dashCharts).forEach(ch=>ch&&ch.resize&&ch.resize());
       // Also re-render map if needed
       if(worldData&&!mapDrillMode&&typeof renderMap==='function')try{renderMap(worldData);}catch(_){}
+      // Scale dashboard to fit viewport
+      fitDash();
     },60);
   }
 }
 
-/* ══════════════════════════════════════════════════════
-   CORPORATE INTELLIGENCE REPORT — v4 Final
-══════════════════════════════════════════════════════ */
+/* ══════════════════════════════════════════
+   SCALE-TO-FIT — makes the dashboard fit any screen like a slide
+══════════════════════════════════════════ */
+function fitDash(){
+  const vc = document.getElementById('viewCharts');
+  const dash = vc ? vc.querySelector('.dash') : null;
+  if(!dash) return;
+
+  // Design canvas size (must match .dash CSS)
+  const DW = 1800, DH = 960;
+
+  // Available viewport (the viewCharts container)
+  const availW = vc.clientWidth;
+  const availH = vc.clientHeight;
+  if(availW < 10 || availH < 10) return; // not visible yet
+
+  // Scale to fit — pick the smaller axis so nothing overflows
+  const scale = Math.min(availW / DW, availH / DH);
+
+  dash.style.transform = 'scale(' + scale + ')';
+  dash.style.transformOrigin = 'top left';
+
+  // Center horizontally if there's leftover space
+  const visualW = DW * scale;
+  const offsetX = Math.max(0, (availW - visualW) / 2);
+  if(offsetX > 1){
+    dash.style.transform = 'translate(' + offsetX + 'px, 0) scale(' + scale + ')';
+  }
+}
+
+// Re-fit on every resize / zoom change
+window.addEventListener('resize', function(){ clearTimeout(window._fitTimer); window._fitTimer=setTimeout(fitDash,80); });
+window.addEventListener('wheel', function(e){ if(e.ctrlKey||e.metaKey){ clearTimeout(window._fitTimer); window._fitTimer=setTimeout(fitDash,120); }});
+
 function buildReport(){
   const reportEl=document.getElementById('reportContent');
   if(!reportEl)return;
@@ -4789,165 +4853,83 @@ function buildReport(){
     const compP=a.competitorProfiles||[];
     const ms=a.marketShare||[];
     const ce=dim.competitionEdge||50, aq=dim.audienceQuality||50, sf=dim.sectorFit||50;
+    const ir=a.investorReadiness||{};
+    const dimExpl=a.dimensionExplanations||{};
+    const riskMit=a.riskMitigations||[];
+    const recs=a.recommendations||[];
     const dimDefs=[
-      {k:'marketSize',l:'Market Size',c:'#1144a0',w:15},
-      {k:'audienceQuality',l:'Audience Quality',c:'#3b82f6',w:20},
-      {k:'competitionEdge',l:'Competitive Edge',c:'#86198f',w:25},
-      {k:'revenuePotential',l:'Revenue Potential',c:'#0f3460',w:25},
-      {k:'riskProfile',l:'Risk Management',c:'#7c3aed',w:10},
-      {k:'sectorFit',l:'Sector Alignment',c:'#059669',w:5},
+      {k:'marketSize',      l:'Market Size',       c:'#1144a0', w:15},
+      {k:'audienceQuality', l:'Audience Quality',  c:'#3b82f6', w:20},
+      {k:'competitionEdge', l:'Competitive Edge',  c:'#86198f', w:25},
+      {k:'revenuePotential',l:'Revenue Potential', c:'#0f3460', w:25},
+      {k:'riskProfile',     l:'Risk Management',   c:'#7c3aed', w:10},
+      {k:'sectorFit',       l:'Sector Alignment',  c:'#059669', w:5},
     ];
     const rptPal=['#1a56db','#86198f','#10b981','#8b5cf6','#f43f5e','#06b6d4'];
 
-    /* ═══ SVG HELPERS ═══════════════════════════════════════ */
+    /* ═══ SVG HELPERS — unchanged ════════════════════════════ */
 
-    // Score gauge — clean minimal
     function scoreGaugeSVG(score,W,H){
-      const cx=W/2, cy=88, R=68, sw=13;
+      const cx=W/2,cy=88,R=68,sw=13;
       const pct=Math.max(0,Math.min(100,score))/100;
       const arcColor=score>=70?'#10B981':score>=50?'#f59e0b':'#ef4444';
       const gradId='g'+Math.random().toString(36).slice(2,6);
-      // Arc endpoints: left=180deg, right=0deg, going clockwise (bottom open)
-      const sx=cx-R, sy=cy;
-      const ex=cx+R, ey=cy;
-      const angle = Math.PI - pct * Math.PI;
-const scX = cx + R * Math.cos(angle);
-const scY = cy - R * Math.sin(angle);
+      const sx=cx-R,sy=cy,ex=cx+R,ey=cy;
+      const angle=Math.PI-pct*Math.PI;
+      const scX=cx+R*Math.cos(angle),scY=cy-R*Math.sin(angle);
       const lg=pct>0.5?1:0;
-      
-      // Grade label
-      const grade=score>=70?'Strong':score>=50?'Moderate':'Needs Work';
       return `<svg width="${W}" height="118" viewBox="0 0 ${W} 118" style="display:block;overflow:visible;">
-        <defs>
-          <linearGradient id="${gradId}" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="${arcColor}" stop-opacity="0.4"/>
-            <stop offset="100%" stop-color="${arcColor}"/>
-          </linearGradient>
-        </defs>
-        <!-- Grey track -->
-        <path d="M${sx},${sy} A${R},${R} 0 0,1 ${ex},${ey}"
-              fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="${sw}" stroke-linecap="round"/>
-        <!-- Coloured score arc -->
-        <path d="M${sx},${sy} A${R},${R} 0 ${lg},1 ${scX},${scY}"
-              fill="none" stroke="url(#${gradId})" stroke-width="${sw}" stroke-linecap="round"/>
-        <!-- 0 and 100 end labels -->
+        <defs><linearGradient id="${gradId}" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="${arcColor}" stop-opacity="0.4"/>
+          <stop offset="100%" stop-color="${arcColor}"/>
+        </linearGradient></defs>
+        <path d="M${sx},${sy} A${R},${R} 0 0,1 ${ex},${ey}" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="${sw}" stroke-linecap="round"/>
+        <path d="M${sx},${sy} A${R},${R} 0 ${lg},1 ${scX},${scY}" fill="none" stroke="url(#${gradId})" stroke-width="${sw}" stroke-linecap="round"/>
         <text x="${sx-4}" y="${sy+16}" text-anchor="end" font-size="9" fill="rgba(255,255,255,0.3)" font-family="'IBM Plex Mono',monospace">0</text>
         <text x="${ex+4}" y="${ey+16}" text-anchor="start" font-size="9" fill="rgba(255,255,255,0.3)" font-family="'IBM Plex Mono',monospace">100</text>
-        <!-- Centre tick at 50 -->
         <line x1="${cx}" y1="${cy-R-sw/2-2}" x2="${cx}" y2="${cy-R+sw/2+2}" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
         <text x="${cx}" y="${cy-R-sw/2-6}" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.2)" font-family="'IBM Plex Mono',monospace">50</text>
-        <!-- Needle -->
-        <line x1="${cx}" y1="${cy}" x2="${scX}" y2="${scY}"
-              stroke="rgba(255,255,255,0.7)" stroke-width="2" stroke-linecap="round"/>
+        <line x1="${cx}" y1="${cy}" x2="${scX}" y2="${scY}" stroke="rgba(255,255,255,0.7)" stroke-width="2" stroke-linecap="round"/>
         <circle cx="${cx}" cy="${cy}" r="5" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
         <circle cx="${cx}" cy="${cy}" r="2.5" fill="rgba(255,255,255,0.8)"/>
-        <!-- Score -->
-        <text x="${cx}" y="${cy-22}" text-anchor="middle" font-family="'IBM Plex Mono',monospace"
-              font-size="34" font-weight="700" fill="${arcColor}">${score}</text>
-        <text x="${cx}" y="${cy-38}" text-anchor="middle" font-family="'Inter',sans-serif"
-              font-size="8.5" fill="rgba(255,255,255,0.35)" letter-spacing=".12em">OUT OF 100</text>
+        <text x="${cx}" y="${cy-22}" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="34" font-weight="700" fill="${arcColor}">${score}</text>
+        <text x="${cx}" y="${cy-38}" text-anchor="middle" font-family="'Inter',sans-serif" font-size="8.5" fill="rgba(255,255,255,0.35)" letter-spacing=".12em">OUT OF 100</text>
       </svg>`;
     }
 
-    // Funnel — proper trapezoid shape + side descriptions
     function funnelSVG(){
-      const tam = +(a.tamCrore)||100;
-      const sam = +(a.samCrore)||30;
-      const som = +(a.somCrore)||5;
-      const fmtV = v => v >= 1000 ? '₹' + (v/1000).toFixed(1) + 'K Cr' : '₹' + Math.round(v) + 'Cr';
-
-      // Layout — funnel on left, labels on right
-      const SVG_W = 480;
-      const FW = 200;   // funnel column width
-      const LX = 224;   // label column starts here
-      const SEG = 64;   // height of each segment
-      const GAP = 4;    // gap between segments
-      const SVG_H = SEG * 3 + GAP * 2 + 12;
-
-      const steps = [
-        {
-          v: tam, l: 'TAM', pct: 100,
-          c: '#1144a0',
-          title: 'Total Addressable Market',
-          desc: 'The entire market demand for your product category in the target geography.',
-          tw: FW, bw: Math.round(FW * 0.68)
-        },
-        {
-          v: sam, l: 'SAM', pct: Math.round(sam/tam*100),
-          c: '#3b82f6',
-          title: 'Serviceable Available Market',
-          desc: 'The segment you can realistically reach with your current model and channels.',
-          tw: Math.round(FW * 0.68), bw: Math.round(FW * 0.38)
-        },
-        {
-          v: som, l: 'SOM', pct: Math.round(som/tam*100),
-          c: '#059669',
-          title: '3-Year Revenue Target',
-          desc: 'Your realistic capture target — typically 2-8% of SAM at early stage.',
-          tw: Math.round(FW * 0.38), bw: Math.round(FW * 0.16)
-        }
+      const tam=+(a.tamCrore)||100,sam=+(a.samCrore)||30,som=+(a.somCrore)||5;
+      const fmtV=v=>v>=1000?'₹'+(v/1000).toFixed(1)+'K Cr':'₹'+Math.round(v)+'Cr';
+      const SVG_W=480,FW=200,LX=224,SEG=64,GAP=4,SVG_H=SEG*3+GAP*2+12;
+      const steps=[
+        {v:tam,l:'TAM',pct:100,c:'#1144a0',title:'Total Addressable Market',desc:'The entire market demand for your product category in the target geography.',tw:FW,bw:Math.round(FW*0.68)},
+        {v:sam,l:'SAM',pct:Math.round(sam/tam*100),c:'#3b82f6',title:'Serviceable Available Market',desc:'The segment you can realistically reach with your current model and channels.',tw:Math.round(FW*0.68),bw:Math.round(FW*0.38)},
+        {v:som,l:'SOM',pct:Math.round(som/tam*100),c:'#059669',title:'3-Year Revenue Target',desc:'Your realistic capture target — typically 2-8% of SAM at early stage.',tw:Math.round(FW*0.38),bw:Math.round(FW*0.16)}
       ];
-
-      const parts = steps.map((s, i) => {
-        const y = 6 + i * (SEG + GAP);
-        const cx = FW / 2;
-        // Trapezoid: top-left, top-right, bottom-right, bottom-left
-        const tlx = cx - s.tw/2, trx = cx + s.tw/2;
-        const blx = cx - s.bw/2, brx = cx + s.bw/2;
-        const path = `M${tlx},${y} L${trx},${y} L${brx},${y+SEG} L${blx},${y+SEG} Z`;
-        const my = y + SEG/2;
-
-        // Connector anchors from the mid-right edge of each trapezoid
-        const midRightX = (trx + brx) / 2;  // average of top-right and bottom-right at mid-height
-        const dotX = midRightX + 4;
-
-        // Label block on the right
-        const lmy = my;
-        const labelLines = s.desc.match(/.{1,44}(\s|$)/g) || [s.desc];
-
-        // For very narrow bottom segment (SOM), keep text inside if it fits, else abbreviate
-        const innerLabel = s.tw > 60 ? `${s.l} · ${s.pct}% of TAM` : s.l;
-        const innerFontSize = s.tw > 80 ? 9 : 8;
-
-        return `
-          <!-- segment ${i} -->
-          <path d="${path}" fill="${s.c}" opacity="0.85"/>
+      const parts=steps.map((s,i)=>{
+        const y=6+i*(SEG+GAP),cx=FW/2;
+        const tlx=cx-s.tw/2,trx=cx+s.tw/2,blx=cx-s.bw/2,brx=cx+s.bw/2;
+        const path=`M${tlx},${y} L${trx},${y} L${brx},${y+SEG} L${blx},${y+SEG} Z`;
+        const my=y+SEG/2,midRightX=(trx+brx)/2,dotX=midRightX+4,lmy=my;
+        const labelLines=s.desc.match(/.{1,44}(\s|$)/g)||[s.desc];
+        const innerLabel=s.tw>60?`${s.l} · ${s.pct}% of TAM`:s.l;
+        const innerFontSize=s.tw>80?9:8;
+        return `<path d="${path}" fill="${s.c}" opacity="0.85"/>
           <path d="${path}" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.2"/>
-          <!-- value -->
-          <text x="${cx}" y="${my - 7}" text-anchor="middle"
-                font-family="'IBM Plex Mono',monospace" font-size="${i === 2 ? 12 : 15}" font-weight="700" fill="#fff">${fmtV(s.v)}</text>
-          <!-- label + pct -->
-          <text x="${cx}" y="${my + 8}" text-anchor="middle"
-                font-family="'Inter',sans-serif" font-size="${innerFontSize}" fill="rgba(255,255,255,0.85)">${innerLabel}</text>
-          <!-- connector dot + line — anchored from actual trapezoid right edge -->
+          <text x="${cx}" y="${my-7}" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="${i===2?12:15}" font-weight="700" fill="#fff">${fmtV(s.v)}</text>
+          <text x="${cx}" y="${my+8}" text-anchor="middle" font-family="'Inter',sans-serif" font-size="${innerFontSize}" fill="rgba(255,255,255,0.85)">${innerLabel}</text>
           <circle cx="${dotX}" cy="${lmy}" r="4" fill="${s.c}"/>
-          <line x1="${dotX + 4}" y1="${lmy}" x2="${LX - 4}" y2="${lmy}" stroke="${s.c}" stroke-width="1.5" stroke-dasharray="3,2"/>
-          <!-- right label -->
-          <text x="${LX}" y="${lmy - 14}" font-family="'Inter',sans-serif"
-                font-size="10" font-weight="700" fill="${s.c}">${s.title}</text>
-          ${labelLines.slice(0,2).map((ln, li) =>
-            `<text x="${LX}" y="${lmy + li * 12}" font-family="'Inter',sans-serif"
-                   font-size="8.5" fill="#6080a0">${ln.trim()}</text>`
-          ).join('')}
-        `;
+          <line x1="${dotX+4}" y1="${lmy}" x2="${LX-4}" y2="${lmy}" stroke="${s.c}" stroke-width="1.5" stroke-dasharray="3,2"/>
+          <text x="${LX}" y="${lmy-14}" font-family="'Inter',sans-serif" font-size="10" font-weight="700" fill="${s.c}">${s.title}</text>
+          ${labelLines.slice(0,2).map((ln,li)=>`<text x="${LX}" y="${lmy+li*12}" font-family="'Inter',sans-serif" font-size="8.5" fill="#6080a0">${ln.trim()}</text>`).join('')}`;
       }).join('');
-
-      // Divider lines between segments
-      const dividers = [1,2].map(i => {
-        const y = 6 + i * (SEG + GAP) - GAP;
-        return `<line x1="2" y1="${y}" x2="${FW-2}" y2="${y}"
-                      stroke="rgba(255,255,255,0.2)" stroke-width="1"/>`;
+      const dividers=[1,2].map(i=>{
+        const y=6+i*(SEG+GAP)-GAP;
+        return `<line x1="2" y1="${y}" x2="${FW-2}" y2="${y}" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>`;
       }).join('');
-
-      return `<svg width="${SVG_W}" height="${SVG_H}"
-                   viewBox="0 0 ${SVG_W} ${SVG_H}"
-                   style="display:block;width:100%;max-width:${SVG_W}px;overflow:visible;">
-        ${parts}
-        ${dividers}
-      </svg>`;
+      return `<svg width="${SVG_W}" height="${SVG_H}" viewBox="0 0 ${SVG_W} ${SVG_H}" style="display:block;width:100%;max-width:${SVG_W}px;overflow:visible;">${parts}${dividers}</svg>`;
     }
 
-    // Donut chart — pure SVG
     function donutSVG(data,W,cx,cy,OR,IR){
       const tot=data.reduce((s,d)=>s+(+d.v||0),0)||100;
       let ang=-Math.PI/2;
@@ -4967,11 +4949,10 @@ const scY = cy - R * Math.sin(angle);
       }).join('');
     }
 
-    // Horizontal bar chart for dimensions
     function dimBarsSVG(){
-      const W=380,H=dimDefs.length*36+16, lw=130;
+      const W=380,H=dimDefs.length*36+16,lw=130;
       const rows=dimDefs.map((d,i)=>{
-        const v=dim[d.k]||0, y=8+i*36;
+        const v=dim[d.k]||0,y=8+i*36;
         const bw=Math.max(4,(W-lw-40)*v/100);
         const statusC=colfn(v);
         return `<text x="${lw-8}" y="${y+16}" text-anchor="end" font-size="10" font-weight="500" fill="#1e3050" font-family="'Inter',sans-serif">${d.l}</text>
@@ -4983,7 +4964,6 @@ const scY = cy - R * Math.sin(angle);
       return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" style="max-width:100%;">${rows}</svg>`;
     }
 
-    // Gantt — full width, readable labels, solid bars
     function ganttSVG(){
       const wins3=a.quickWins||[];
       const tasks=[
@@ -4994,34 +4974,13 @@ const scY = cy - R * Math.sin(angle);
         {l:'Build GTM Beachhead Strategy',start:5,dur:4,c:'#0f3460',type:'strategy'},
         {l:'Close First 3 Paying Pilots',start:7,dur:5,c:'#7c3aed',type:'revenue'},
       ];
-
-      // Responsive: fill available width
-      const W=700, lw=220, weeks=12, rh=36, topPad=32, botPad=36;
-      const H=tasks.length*rh+topPad+botPad;
-      const cw=(W-lw)/weeks;
-
-      // Alternating row backgrounds
+      const W=700,lw=220,weeks=12,rh=36,topPad=32,botPad=36,H=tasks.length*rh+topPad+botPad,cw=(W-lw)/weeks;
       const rowBg=tasks.map((t,i)=>`<rect x="0" y="${topPad+i*rh}" width="${W}" height="${rh}" fill="${i%2===0?'#f8faff':'#ffffff'}"/>`).join('');
-
-      // Vertical grid lines
-      const grid=Array.from({length:weeks+1},(_,i)=>{
-        const x=lw+i*cw;
-        const isMajor=i%4===0;
-        return `<line x1="${x}" y1="${topPad-8}" x2="${x}" y2="${H-botPad+4}" stroke="${isMajor?'rgba(17,68,160,0.15)':'rgba(17,68,160,0.06)'}" stroke-width="${isMajor?1:0.5}"/>`;
-      }).join('');
-
-      // Week labels — only show W1,W2...W12, skip if too narrow
+      const grid=Array.from({length:weeks+1},(_,i)=>{const x=lw+i*cw,isMajor=i%4===0;return `<line x1="${x}" y1="${topPad-8}" x2="${x}" y2="${H-botPad+4}" stroke="${isMajor?'rgba(17,68,160,0.15)':'rgba(17,68,160,0.06)'}" stroke-width="${isMajor?1:0.5}"/>`;}).join('');
       const wkLbls=Array.from({length:weeks},(_,i)=>`<text x="${lw+(i+0.5)*cw}" y="${topPad-10}" text-anchor="middle" font-size="8" fill="#94a3b8" font-family="'IBM Plex Mono',monospace">W${i+1}</text>`).join('');
-
-      // Task rows
       const typeIcon={'win':'✓','research':'○','strategy':'◆','revenue':'$'};
       const rows=tasks.map((t,i)=>{
-        const y=topPad+i*rh;
-        const bx=lw+t.start*cw+1;
-        const bw=Math.max(t.dur*cw-3, 20);
-        const midY=y+rh/2;
-        const icon=typeIcon[t.type]||'·';
-        // Solid bar with full fill + left accent
+        const y=topPad+i*rh,bx=lw+t.start*cw+1,bw=Math.max(t.dur*cw-3,20),midY=y+rh/2,icon=typeIcon[t.type]||'·';
         return `<text x="12" y="${midY+4}" font-size="10" font-weight="700" fill="${t.c}" font-family="'IBM Plex Mono',monospace">${icon}</text>
           <text x="26" y="${midY+4}" font-size="10.5" fill="#061228" font-family="'Inter',sans-serif">${t.l}</text>
           <rect x="${bx}" y="${y+6}" width="${bw}" height="${rh-12}" rx="5" fill="${t.c}" opacity="0.18"/>
@@ -5029,22 +4988,16 @@ const scY = cy - R * Math.sin(angle);
           <rect x="${bx}" y="${y+6}" width="4" height="${rh-12}" rx="3" fill="${t.c}" opacity="0.9"/>
           <text x="${bx+bw/2}" y="${midY+4}" text-anchor="middle" font-size="9" font-weight="700" fill="${t.c}" font-family="'IBM Plex Mono',monospace">W${t.start+1}–W${t.start+t.dur}</text>`;
       }).join('');
-
-      // Month bands at bottom
       const mColors=[['#eff6ff','#1144a0'],['#f0fdf4','#059669'],['#fefce8','#92400e']];
       const months=mColors.map(([bg,fc],i)=>`<rect x="${lw+i*4*cw}" y="${H-botPad+4}" width="${4*cw-1}" height="20" rx="4" fill="${bg}"/>
         <text x="${lw+(i*4+2)*cw}" y="${H-botPad+17}" text-anchor="middle" font-size="9" font-weight="700" fill="${fc}" font-family="'Inter',sans-serif">Month ${i+1}</text>`).join('');
-
-      // Divider line
       const divider=`<line x1="${lw}" y1="${topPad-14}" x2="${lw}" y2="${H-botPad+2}" stroke="rgba(17,68,160,0.12)" stroke-width="1.5"/>`;
-
       return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" style="width:100%;max-width:${W}px;display:block;">
         <rect width="${W}" height="${H}" fill="#fff"/>
         ${rowBg}${grid}${divider}${rows}${months}${wkLbls}
       </svg>`;
     }
 
-    // Risk heatmap — improved
     function riskSVG(){
       const risks2=a.topRisks||[];
       const items=[
@@ -5063,7 +5016,7 @@ const scY = cy - R * Math.sin(angle);
           <rect x="${lx+col2*cw}" y="${ty+row*ch}" width="${cw}" height="${ch}" fill="none" stroke="rgba(17,68,160,0.12)" stroke-width="0.8"/>`);
       }
       const dots=items.map((it)=>{
-        const dcx=lx+(it.i-1)*cw+cw/2, dcy=ty+(3-it.p)*ch+ch/2;
+        const dcx=lx+(it.i-1)*cw+cw/2,dcy=ty+(3-it.p)*ch+ch/2;
         const dc=it.p*it.i>=6?'#ef4444':it.p*it.i>=4?'#f59e0b':'#3b82f6';
         return `<circle cx="${dcx}" cy="${dcy}" r="12" fill="${dc}" opacity="0.12"/>
           <circle cx="${dcx}" cy="${dcy}" r="4.5" fill="${dc}"/>
@@ -5078,7 +5031,20 @@ const scY = cy - R * Math.sin(angle);
       </svg>`;
     }
 
-    /* ═══ BUILD HTML ═══════════════════════════════════════ */
+    /* ═══ SECTION HEADER HELPER ══════════════════════════════ */
+    const secHdr=(letter,title,sub)=>`
+      <div style="margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid rgba(17,68,160,0.12);display:flex;align-items:baseline;gap:12px;">
+        <span style="font-size:10px;font-weight:700;color:#6080a0;letter-spacing:.16em;text-transform:uppercase;">${letter}</span>
+        <span style="font-size:18px;font-weight:700;color:#061228;letter-spacing:-.02em;">${title}</span>
+        <span style="font-size:12px;color:#94a3b8;margin-left:auto;">${sub}</span>
+      </div>`;
+
+    const cardWrap=(content)=>`
+      <div style="background:#fff;border-radius:8px;border:1px solid rgba(17,68,160,0.12);overflow:hidden;box-shadow:0 1px 6px rgba(6,18,40,.05);">
+        ${content}
+      </div>`;
+
+    /* ═══ BUILD HTML ══════════════════════════════════════════ */
     const html=`
 <div style="font-family:'Inter',sans-serif;color:#061228;background:#f0f4ff;">
 
@@ -5086,7 +5052,6 @@ const scY = cy - R * Math.sin(angle);
   <div style="background:#061228;min-height:320px;padding:52px 60px 0;position:relative;overflow:hidden;">
     <div style="position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 110% 50%, rgba(26,86,219,0.18) 0%, transparent 60%),radial-gradient(ellipse 40% 80% at -10% 50%, rgba(59,130,246,0.12) 0%, transparent 60%);pointer-events:none;"></div>
     <div style="position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(147,197,253,0.4) 40%,rgba(99,102,241,0.3) 60%,transparent 100%);"></div>
-
     <div style="position:relative;z-index:2;display:grid;grid-template-columns:1fr 260px;gap:40px;align-items:flex-start;padding-bottom:40px;">
       <div>
         <div style="font-size:8px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:rgba(147,197,253,0.45);margin-bottom:18px;display:flex;align-items:center;gap:10px;">
@@ -5094,7 +5059,7 @@ const scY = cy - R * Math.sin(angle);
           Infopace Management Pvt Ltd &nbsp;·&nbsp; Market Potential Assessment
         </div>
         <div style="font-size:42px;font-weight:700;color:#dbeafe;line-height:1.0;letter-spacing:-.03em;margin-bottom:12px;">${esc(biz)}</div>
-        <div style="font-size:13px;color:rgba(191,219,254,0.85);margin-bottom:24px;letter-spacing:.02em;">${esc(fd.sector)} &nbsp;&nbsp;/&nbsp;&nbsp; ${esc(fd.bizType)} &nbsp;&nbsp;/&nbsp;&nbsp; ${esc(fd.geo)}</div>
+        <div style="font-size:13px;color:rgba(191,219,254,0.85);margin-bottom:24px;letter-spacing:.02em;">${esc(fd.sector||'')} &nbsp;&nbsp;/&nbsp;&nbsp; ${esc(fd.bizType||'')} &nbsp;&nbsp;/&nbsp;&nbsp; ${esc(fd.geo||'')}</div>
         <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px;">
           ${[
             {t:a.grade||'—',bg:'rgba(255,255,255,.08)',c:'#eff6ff',b:'rgba(255,255,255,.12)'},
@@ -5104,16 +5069,12 @@ const scY = cy - R * Math.sin(angle);
           ].map(tg=>`<span style="background:${tg.bg};border:1px solid ${tg.b};color:${tg.c};font-size:10px;font-weight:600;padding:5px 14px;border-radius:4px;letter-spacing:.04em;">${tg.t}</span>`).join('')}
         </div>
       </div>
-
-      <!-- Gauge card -->
       <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:22px 16px 16px;text-align:center;">
-        ${scoreGaugeSVG(a.overallScore, 220, 118)}
+        ${scoreGaugeSVG(a.overallScore,220,118)}
         <div style="font-size:10px;color:rgba(191,219,254,0.75);text-transform:uppercase;letter-spacing:.14em;margin-top:8px;">Market Potential</div>
         <div style="font-size:13px;font-weight:700;color:${sCol};margin-top:5px;letter-spacing:.03em;">${a.grade||''} Opportunity</div>
       </div>
     </div>
-
-    <!-- KPI bar -->
     <div style="position:relative;z-index:2;display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid rgba(255,255,255,.07);">
       ${[
         {l:'Total Market',v:'₹'+Math.round(a.tamCrore||0)+'Cr',sub:'TAM'},
@@ -5131,38 +5092,34 @@ const scY = cy - R * Math.sin(angle);
   <!-- ══ BODY ══ -->
   <div style="padding:40px 60px 80px;">
 
-    <!-- Verdict strip -->
-    ${a.verdict?`<div style="display:grid;grid-template-columns:auto 1fr;gap:0;margin-bottom:32px;background:#fff;border-radius:8px;border:1px solid rgba(17,68,160,0.12);overflow:hidden;box-shadow:0 1px 8px rgba(6,18,40,.05);">
+    <!-- ── EXECUTIVE SUMMARY (NEW) ── -->
+    ${(a.executiveSummary||a.verdict)?`
+    <div style="display:grid;grid-template-columns:auto 1fr;gap:0;margin-bottom:32px;background:#fff;border-radius:8px;border:1px solid rgba(17,68,160,0.12);overflow:hidden;box-shadow:0 1px 8px rgba(6,18,40,.05);">
       <div style="background:#061228;width:6px;"></div>
-      <div style="padding:22px 28px;">
-        <div style="font-size:8px;font-weight:700;color:#6080a0;text-transform:uppercase;letter-spacing:.18em;margin-bottom:10px;">Executive Assessment</div>
-        <div style="font-size:15px;color:#061228;line-height:1.8;font-weight:400;">${esc(a.verdict)}</div>
+      <div style="padding:24px 28px;">
+        <div style="font-size:8px;font-weight:700;color:#6080a0;text-transform:uppercase;letter-spacing:.18em;margin-bottom:12px;">Executive Assessment</div>
+        <div style="font-size:15px;color:#061228;line-height:1.8;font-weight:400;">${esc(a.executiveSummary||a.verdict||'')}</div>
         ${a.realTimeInsight?`<div style="margin-top:14px;display:flex;align-items:flex-start;gap:10px;padding:12px 16px;background:#eff6ff;border-radius:6px;border:1px solid #bfdbfe;">
-          <span style="font-size:11px;color:#059669;font-weight:700;flex-shrink:0;">LIVE</span>
+          <span style="font-size:11px;color:#059669;font-weight:700;flex-shrink:0;margin-top:1px;">LIVE</span>
           <span style="font-size:12px;color:#059669;line-height:1.6;">${esc(a.realTimeInsight)}</span>
+        </div>`:''}
+        ${a.stageContext?`<div style="margin-top:12px;font-size:12px;color:#6080a0;line-height:1.7;padding-top:12px;border-top:1px solid rgba(17,68,160,0.06);">
+          <span style="font-size:8px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.12em;margin-right:8px;">STAGE CONTEXT</span>${esc(a.stageContext)}
         </div>`:''}
       </div>
     </div>`:''}
 
     <!-- ── Section A: Market Opportunity ── -->
-    <div style="margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid rgba(17,68,160,0.12);display:flex;align-items:baseline;gap:12px;">
-      <span style="font-size:10px;font-weight:700;color:#6080a0;letter-spacing:.16em;text-transform:uppercase;">A</span>
-      <span style="font-size:18px;font-weight:700;color:#061228;letter-spacing:-.02em;">Market Opportunity</span>
-      <span style="font-size:12px;color:#94a3b8;margin-left:auto;">TAM · SAM · SOM Analysis</span>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:32px;" id="mktOppGrid">
-      <!-- Funnel -->
-      <div style="background:#fff;border-radius:8px;border:1px solid rgba(17,68,160,0.12);overflow:hidden;box-shadow:0 1px 6px rgba(6,18,40,.05);">
+    ${secHdr('A','Market Opportunity','TAM · SAM · SOM Analysis')}
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:${dimExpl&&Object.keys(dimExpl).length?'16px':'32px'};">
+      ${cardWrap(`
         <div style="padding:16px 22px 14px;border-bottom:1px solid rgba(17,68,160,0.06);">
           <div style="font-size:11px;font-weight:700;color:#1e3050;">Market Funnel</div>
           <div style="font-size:10px;color:#94a3b8;margin-top:2px;">Total → Serviceable → Achievable</div>
         </div>
-        <div style="padding:20px 22px;display:flex;flex-direction:column;align-items:center;">
-          ${funnelSVG()}
-        </div>
-      </div>
-      <!-- Score breakdown -->
-      <div style="background:#fff;border-radius:8px;border:1px solid rgba(17,68,160,0.12);overflow:hidden;box-shadow:0 1px 6px rgba(6,18,40,.05);">
+        <div style="padding:20px 22px;display:flex;flex-direction:column;align-items:center;">${funnelSVG()}</div>
+      `)}
+      ${cardWrap(`
         <div style="padding:16px 22px 14px;border-bottom:1px solid rgba(17,68,160,0.06);">
           <div style="font-size:11px;font-weight:700;color:#1e3050;">Capability Assessment</div>
           <div style="font-size:10px;color:#94a3b8;margin-top:2px;">6 dimensions · weighted scoring</div>
@@ -5174,43 +5131,66 @@ const scY = cy - R * Math.sin(angle);
             <span style="font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:700;color:${sCol};">${a.overallScore}<span style="font-size:13px;color:rgba(17,68,160,0.15);">/100</span></span>
           </div>
         </div>
-      </div>
+      `)}
     </div>
 
-    <!-- ── Section B: Strategic Position ── -->
-    <div style="margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid rgba(17,68,160,0.12);display:flex;align-items:baseline;gap:12px;">
-      <span style="font-size:10px;font-weight:700;color:#6080a0;letter-spacing:.16em;text-transform:uppercase;">B</span>
-      <span style="font-size:18px;font-weight:700;color:#061228;letter-spacing:-.02em;">Strategic Position</span>
-      <span style="font-size:12px;color:#94a3b8;margin-left:auto;">SWOT · Strengths / Gaps / Opportunities / Threats</span>
-    </div>
+    <!-- Dimension Explanations (NEW) — shown only if AI generated them -->
+    ${(dimExpl&&Object.keys(dimExpl).length)?`
+    <div style="margin-bottom:32px;">
+      ${cardWrap(`
+        <div style="padding:14px 22px 12px;border-bottom:1px solid rgba(17,68,160,0.06);display:flex;align-items:center;gap:10px;">
+          <div style="font-size:11px;font-weight:700;color:#1e3050;">Why Each Score — What To Do</div>
+          <div style="font-size:10px;color:#94a3b8;margin-left:auto;">AI explanation · tied to your answers</div>
+        </div>
+        <div style="padding:8px 22px 16px;">
+          ${dimDefs.map(d=>{
+            const v=dim[d.k]||0;
+            const expl=dimExpl[d.k]||'';
+            if(!expl)return '';
+            return `<div style="display:grid;grid-template-columns:140px 1fr;gap:16px;align-items:start;padding:12px 0;border-bottom:1px solid rgba(17,68,160,0.04);">
+              <div style="display:flex;align-items:center;gap:8px;">
+                <div style="width:28px;height:28px;border-radius:6px;background:${d.c}18;border:1px solid ${d.c}30;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                  <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;color:${d.c};">${v}</span>
+                </div>
+                <span style="font-size:11px;font-weight:600;color:#1e3050;">${d.l}</span>
+              </div>
+              <div style="font-size:12px;color:#4a6080;line-height:1.65;">${esc(expl)}</div>
+            </div>`;
+          }).join('')}
+        </div>
+      `)}
+    </div>`:''}
+
+    <!-- ── Section B: Strategic Position (SWOT) ── -->
+    ${secHdr('B','Strategic Position','SWOT · Strengths / Gaps / Opportunities / Threats')}
     <div style="background:#fff;border-radius:8px;border:1px solid rgba(17,68,160,0.12);overflow:hidden;margin-bottom:32px;box-shadow:0 1px 6px rgba(6,18,40,.05);">
       <div style="display:grid;grid-template-columns:1fr 1fr;">
         ${[
-          {k:'S',l:'Strengths',c:'#059669',bg:'#eff6ff',border:'#A7F3D0',icon:'S',items:[
-            (dim.competitionEdge||0)>=65?'Competitive edge score '+( dim.competitionEdge||0)+'% signals differentiated positioning in '+fd.sector:'Clear problem-solution fit identified — further validation in progress',
-            (dim.revenuePotential||0)>=65?'Revenue potential ('+( dim.revenuePotential||0)+'%) validates a scalable business model at current stage':'Revenue model architecture shows clear path to scalability',
-            'Sector CAGR of '+a.growthRate+'% provides a strong structural tailwind in '+fd.geo,
+          {k:'S',l:'Strengths',c:'#059669',bg:'#f0fdf4',border:'#A7F3D0',icon:'S',items:[
+            (dim.competitionEdge||0)>=65?'Competitive edge score '+(dim.competitionEdge||0)+'% signals differentiated positioning in '+esc(fd.sector||''):'Clear problem-solution fit identified — further validation in progress',
+            (dim.revenuePotential||0)>=65?'Revenue potential ('+(dim.revenuePotential||0)+'%) validates a scalable business model at current stage':'Revenue model architecture shows clear path to scalability',
+            'Sector CAGR of '+a.growthRate+'% provides a strong structural tailwind in '+esc(fd.geo||''),
             a.overallScore>=65?'Composite score of '+a.overallScore+'/100 positions this above typical early-stage benchmarks':'Stage-appropriate validation signals present across key dimensions',
           ]},
           {k:'W',l:'Weaknesses',c:'#dc2626',bg:'#fff1f2',border:'#fecaca',icon:'W',items:[
-            (dim.marketSize||50)<60?'Market size index ('+( dim.marketSize||50)+'%) suggests TAM definition may need broadening':'Brand and distribution moat still early-stage relative to incumbents',
-            (dim.audienceQuality||50)<60?'Buyer validation depth ('+( dim.audienceQuality||50)+'%) — more paid evidence needed before scaling':'Customer acquisition playbook not yet fully systematised',
-            'Established competitors — '+(compP.slice(0,2).map(p=>p.name).join(', ')||'incumbents')+' — hold distribution advantages',
+            (dim.marketSize||50)<60?'Market size index ('+(dim.marketSize||50)+'%) suggests TAM definition may need broadening':'Brand and distribution moat still early-stage relative to incumbents',
+            (dim.audienceQuality||50)<60?'Buyer validation depth ('+(dim.audienceQuality||50)+'%) — more paid evidence needed before scaling':'Customer acquisition playbook not yet fully systematised',
+            'Established competitors — '+(compP.slice(0,2).map(p=>esc(p.name)).join(', ')||'incumbents')+' — hold distribution advantages',
             'Go-to-market velocity will require capital and partner ecosystem development',
           ]},
           {k:'O',l:'Opportunities',c:'#1144a0',bg:'#eff6ff',border:'#bfdbfe',icon:'O',items:[
             '₹'+Math.round(a.tamCrore||0)+'Cr TAM expanding at '+a.growthRate+'% CAGR — the window for positioning is open now',
-            fd.geo+' digital infrastructure improving rapidly, compressing customer acquisition timelines',
-            (a.keyInsights||[])[0]?a.keyInsights[0].replace(/^[💡⚔️💰📍✅]\s*/,'').slice(0,80):'Underserved micro-segments within '+fd.sector+' present first-mover opportunity',
-            fd.bizType+' decision-makers showing accelerated procurement cycles post-digitisation',
+            esc(fd.geo||'')+' digital infrastructure improving rapidly, compressing customer acquisition timelines',
+            (a.keyInsights||[])[0]?(a.keyInsights[0]).replace(/^[💡⚔️💰📍✅]\s*/u,'').slice(0,80):'Underserved micro-segments within '+esc(fd.sector||'')+' present first-mover opportunity',
+            esc(fd.bizType||'')+' decision-makers showing accelerated procurement cycles post-digitisation',
           ]},
           {k:'T',l:'Threats',c:'#92400e',bg:'#fefce8',border:'#fde68a',icon:'T',items:[
             (a.topRisks||[])[0]||(compP[0]?.name||'Incumbents')+' may respond aggressively to new entrants in this segment',
-            (a.topRisks||[])[1]||'Regulatory environment in '+fd.sector+' remains in flux — compliance costs could increase',
+            (a.topRisks||[])[1]||'Regulatory environment in '+esc(fd.sector||'')+' remains in flux — compliance costs could increase',
             (a.topRisks||[])[2]||'Technology substitution risk is real if the core value proposition is not deeply embedded',
             'Customer concentration risk during early growth if pilot accounts represent >40% of ARR',
           ]},
-        ].map((q,qi)=>`<div style="padding:24px 28px;background:${q.bg};${qi===1||qi===3?'border-left:1px solid '+q.border+';':''} ${qi>=2?'border-top:1px solid '+q.border+';':''}">
+        ].map((q,qi)=>`<div style="padding:24px 28px;background:${q.bg};${qi===1||qi===3?'border-left:1px solid '+q.border+';':''}${qi>=2?'border-top:1px solid '+q.border+';':''}">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
             <div style="width:30px;height:30px;border-radius:6px;background:${q.c};color:#fff;font-size:13px;font-weight:800;display:grid;place-items:center;font-family:'IBM Plex Mono',monospace;">${q.icon}</div>
             <span style="font-size:12px;font-weight:700;color:${q.c};letter-spacing:.06em;text-transform:uppercase;">${q.l}</span>
@@ -5223,16 +5203,75 @@ const scY = cy - R * Math.sin(angle);
       </div>
     </div>
 
-    <!-- ── Section C: Competitive & Risk ── -->
-    <div style="margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid rgba(17,68,160,0.12);display:flex;align-items:baseline;gap:12px;">
-      <span style="font-size:10px;font-weight:700;color:#6080a0;letter-spacing:.16em;text-transform:uppercase;">C</span>
-      <span style="font-size:18px;font-weight:700;color:#061228;letter-spacing:-.02em;">Competitive Intelligence</span>
-      <span style="font-size:12px;color:#94a3b8;margin-left:auto;">Porter's Forces · Risk Matrix</span>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:32px;">
+    <!-- ── Section B2: Investor Readiness (NEW) ── -->
+    ${(ir&&(ir.score||ir.vcPassReasons||ir.whatToFix))?`
+    ${secHdr('B2','Investor Readiness','VC perspective · what to fix · realistic raise')}
+    <div style="display:grid;grid-template-columns:200px 1fr 1fr;gap:16px;margin-bottom:32px;">
 
-      <!-- Porter's Five Forces — redesigned as a table -->
-      <div style="background:#fff;border-radius:8px;border:1px solid rgba(17,68,160,0.12);overflow:hidden;box-shadow:0 1px 6px rgba(6,18,40,.05);">
+      <!-- Score Card -->
+      <div style="background:#061228;border-radius:8px;padding:24px 20px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:44px;font-weight:700;color:${colfn(ir.score||0)};line-height:1;">${ir.score||'—'}</div>
+        <div style="font-size:9px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.12em;margin-top:6px;">Investor Readiness</div>
+        <div style="margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.08);width:100%;">
+          <div style="font-size:10px;color:rgba(191,219,254,.7);margin-bottom:4px;">Raise Range</div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:700;color:#93c5fd;">${esc(ir.realisticRaiseRange||'—')}</div>
+        </div>
+        <div style="margin-top:10px;width:100%;">
+          <div style="font-size:10px;color:rgba(191,219,254,.7);margin-bottom:4px;">Time to Fundable</div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:700;color:#93c5fd;">${esc(ir.timeToFundable||'—')}</div>
+        </div>
+      </div>
+
+      <!-- Why VCs Pass Today -->
+      ${cardWrap(`
+        <div style="padding:14px 20px 12px;border-bottom:1px solid rgba(17,68,160,0.06);">
+          <div style="font-size:11px;font-weight:700;color:#dc2626;">Why a Tier 1 VC Would Pass Today</div>
+          <div style="font-size:10px;color:#94a3b8;margin-top:2px;">Specific gaps that need to close before fundraising</div>
+        </div>
+        <div style="padding:14px 20px;">
+          ${(ir.vcPassReasons||[]).map((r,i)=>`<div style="display:flex;gap:10px;margin-bottom:12px;align-items:flex-start;">
+            <div style="width:20px;height:20px;border-radius:50%;background:#fee2e2;border:1px solid #fecaca;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+              <span style="font-size:9px;font-weight:700;color:#dc2626;">${i+1}</span>
+            </div>
+            <div style="font-size:12px;color:#1e3050;line-height:1.6;">${esc(r)}</div>
+          </div>`).join('')}
+        </div>
+      `)}
+
+      <!-- What to Fix -->
+      ${cardWrap(`
+        <div style="padding:14px 20px 12px;border-bottom:1px solid rgba(17,68,160,0.06);">
+          <div style="font-size:11px;font-weight:700;color:#059669;">What to Fix Before Fundraising</div>
+          <div style="font-size:10px;color:#94a3b8;margin-top:2px;">Ordered by investor impact</div>
+        </div>
+        <div style="padding:14px 20px;">
+          ${(ir.whatToFix||[]).map((f,i)=>`<div style="display:flex;gap:10px;margin-bottom:12px;align-items:flex-start;">
+            <div style="width:20px;height:20px;border-radius:50%;background:#d1fae5;border:1px solid #a7f3d0;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+              <span style="font-size:9px;font-weight:700;color:#059669;">${i+1}</span>
+            </div>
+            <div style="font-size:12px;color:#1e3050;line-height:1.6;">${esc(f)}</div>
+          </div>`).join('')}
+        </div>
+      `)}
+    </div>`:''}
+
+    <!-- ── Sector Brutal Truth (NEW) ── -->
+    ${a.sectorBrutalTruth?`
+    <div style="background:#0d2040;border-radius:8px;padding:28px 32px;margin-bottom:32px;position:relative;overflow:hidden;">
+      <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#ef4444,#f59e0b);"></div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+        <div style="background:rgba(239,68,68,0.15);border:1px solid rgba(239,68,68,0.3);border-radius:4px;padding:3px 10px;">
+          <span style="font-size:9px;font-weight:700;color:#f87171;letter-spacing:.12em;text-transform:uppercase;">Sector Truth</span>
+        </div>
+        <span style="font-size:11px;color:rgba(255,255,255,.35);">What operators say privately — not in any report</span>
+      </div>
+      <div style="font-size:14px;color:rgba(255,255,255,.88);line-height:1.85;font-weight:400;">${esc(a.sectorBrutalTruth)}</div>
+    </div>`:''}
+
+    <!-- ── Section C: Competitive Intelligence ── -->
+    ${secHdr('C','Competitive Intelligence','Porter\'s Forces · Risk Matrix')}
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:32px;">
+      ${cardWrap(`
         <div style="padding:16px 22px 14px;border-bottom:1px solid rgba(17,68,160,0.06);">
           <div style="font-size:11px;font-weight:700;color:#1e3050;">Porter's Five Forces</div>
           <div style="font-size:10px;color:#94a3b8;margin-top:2px;">Structural attractiveness assessment</div>
@@ -5256,10 +5295,8 @@ const scY = cy - R * Math.sin(angle);
             </div>
           </div>`).join('')}
         </div>
-      </div>
-
-      <!-- Risk Heatmap -->
-      <div style="background:#fff;border-radius:8px;border:1px solid rgba(17,68,160,0.12);overflow:hidden;box-shadow:0 1px 6px rgba(6,18,40,.05);">
+      `)}
+      ${cardWrap(`
         <div style="padding:16px 22px 14px;border-bottom:1px solid rgba(17,68,160,0.06);">
           <div style="font-size:11px;font-weight:700;color:#1e3050;">Risk Assessment Matrix</div>
           <div style="font-size:10px;color:#94a3b8;margin-top:2px;">Probability × Impact · 6 key risks plotted</div>
@@ -5272,15 +5309,53 @@ const scY = cy - R * Math.sin(angle);
             </div>`).join('')}
           </div>
         </div>
-      </div>
+      `)}
     </div>
 
+    <!-- Risk Mitigations Table (NEW) — shown only if AI generated them -->
+    ${(riskMit&&riskMit.length)?`
+    <div style="margin-bottom:32px;">
+      ${cardWrap(`
+        <div style="padding:14px 22px 12px;border-bottom:1px solid rgba(17,68,160,0.06);">
+          <div style="font-size:11px;font-weight:700;color:#1e3050;">Risk Mitigation Strategies</div>
+          <div style="font-size:10px;color:#94a3b8;margin-top:2px;">Specific action for each risk · with timeline and urgency window</div>
+        </div>
+        <div style="overflow:auto;">
+          <table style="width:100%;border-collapse:collapse;">
+            <thead>
+              <tr style="background:#f8faff;">
+                <th style="padding:10px 16px;text-align:left;font-size:10px;font-weight:700;color:#6080a0;text-transform:uppercase;letter-spacing:.08em;border-bottom:1px solid rgba(17,68,160,0.08);">Risk</th>
+                <th style="padding:10px 12px;text-align:center;font-size:10px;font-weight:700;color:#6080a0;text-transform:uppercase;letter-spacing:.08em;border-bottom:1px solid rgba(17,68,160,0.08);">Prob.</th>
+                <th style="padding:10px 12px;text-align:center;font-size:10px;font-weight:700;color:#6080a0;text-transform:uppercase;letter-spacing:.08em;border-bottom:1px solid rgba(17,68,160,0.08);">Impact</th>
+                <th style="padding:10px 16px;text-align:left;font-size:10px;font-weight:700;color:#6080a0;text-transform:uppercase;letter-spacing:.08em;border-bottom:1px solid rgba(17,68,160,0.08);">Mitigation Action</th>
+                <th style="padding:10px 16px;text-align:left;font-size:10px;font-weight:700;color:#6080a0;text-transform:uppercase;letter-spacing:.08em;border-bottom:1px solid rgba(17,68,160,0.08);">Window</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${riskMit.map((r,i)=>{
+                const pc=r.probability==='High'?'#dc2626':r.probability==='Medium'?'#d97706':'#059669';
+                const ic=r.impact==='High'?'#dc2626':r.impact==='Medium'?'#d97706':'#059669';
+                return `<tr style="background:${i%2===0?'#fff':'#f8faff'};">
+                  <td style="padding:12px 16px;font-size:12px;color:#1e3050;font-weight:500;border-bottom:1px solid rgba(17,68,160,0.05);max-width:180px;">${esc(r.risk||'')}</td>
+                  <td style="padding:12px;text-align:center;border-bottom:1px solid rgba(17,68,160,0.05);">
+                    <span style="font-size:9px;font-weight:700;color:${pc};background:${pc}12;padding:3px 8px;border-radius:4px;white-space:nowrap;">${esc(r.probability||'')}</span>
+                  </td>
+                  <td style="padding:12px;text-align:center;border-bottom:1px solid rgba(17,68,160,0.05);">
+                    <span style="font-size:9px;font-weight:700;color:${ic};background:${ic}12;padding:3px 8px;border-radius:4px;white-space:nowrap;">${esc(r.impact||'')}</span>
+                  </td>
+                  <td style="padding:12px 16px;font-size:12px;color:#4a6080;line-height:1.6;border-bottom:1px solid rgba(17,68,160,0.05);">${esc(r.mitigation||'')}</td>
+                  <td style="padding:12px 16px;font-size:11px;color:#6080a0;font-style:italic;border-bottom:1px solid rgba(17,68,160,0.05);white-space:nowrap;">${esc(r.window||'')}</td>
+                </tr>`;
+              }).join('')}
+            </tbody>
+          </table>
+        </div>
+      `)}
+    </div>`:''}
+
     <!-- ── Section D: Competitor Profiles ── -->
-    ${compP.length?`<div style="margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid rgba(17,68,160,0.12);display:flex;align-items:baseline;gap:12px;">
-      <span style="font-size:10px;font-weight:700;color:#6080a0;letter-spacing:.16em;text-transform:uppercase;">D</span>
-      <span style="font-size:18px;font-weight:700;color:#061228;letter-spacing:-.02em;">Competitor Profiles</span>
-      <span style="font-size:12px;color:#94a3b8;margin-left:auto;">${compP.length} direct competitors identified</span>
-    </div>
+    ${compP.length?`
+    ${secHdr('D','Competitor Profiles',compP.length+' direct competitors identified')}
     <div style="display:grid;grid-template-columns:repeat(${Math.min(compP.length,3)},1fr);gap:16px;margin-bottom:32px;">
       ${compP.slice(0,3).map((p,pi)=>{
         const rc3=(a.competitorRadar||[]).find(r=>r.name===p.name);
@@ -5297,10 +5372,18 @@ const scY = cy - R * Math.sin(angle);
               <div style="font-size:8px;font-weight:700;color:#059669;text-transform:uppercase;letter-spacing:.1em;margin-bottom:3px;">Strength</div>
               <div style="font-size:11px;color:#061228;line-height:1.5;">${esc(p.strength||'—')}</div>
             </div>
-            <div style="background:#fefce8;border-radius:6px;padding:8px 12px;margin-bottom:12px;">
+            <div style="background:#fefce8;border-radius:6px;padding:8px 12px;margin-bottom:8px;">
               <div style="font-size:8px;font-weight:700;color:#92400e;text-transform:uppercase;letter-spacing:.1em;margin-bottom:3px;">Exploitable Gap</div>
               <div style="font-size:11px;color:#061228;line-height:1.5;">${esc(p.weakness||'—')}</div>
             </div>
+            ${p.counterMove?`<div style="background:#fff1f2;border-radius:6px;padding:8px 12px;margin-bottom:8px;">
+              <div style="font-size:8px;font-weight:700;color:#dc2626;text-transform:uppercase;letter-spacing:.1em;margin-bottom:3px;">Their Counter-Move</div>
+              <div style="font-size:11px;color:#061228;line-height:1.5;">${esc(p.counterMove)}</div>
+            </div>`:''}
+            ${p.howToBeat?`<div style="background:#f0fdf4;border-radius:6px;padding:8px 12px;margin-bottom:12px;">
+              <div style="font-size:8px;font-weight:700;color:#059669;text-transform:uppercase;letter-spacing:.1em;margin-bottom:3px;">How to Beat Them</div>
+              <div style="font-size:11px;color:#061228;line-height:1.5;">${esc(p.howToBeat)}</div>
+            </div>`:''}
             ${rc3?axes.map((ax,ai)=>{const v3=rc3.scores?.[ax]||0;return`<div style="display:flex;align-items:center;gap:7px;margin-bottom:5px;">
               <span style="font-size:9px;color:#94a3b8;width:46px;flex-shrink:0;">${axL[ai]}</span>
               <div style="flex:1;height:4px;background:rgba(17,68,160,0.06);border-radius:2px;overflow:hidden;"><div style="width:${v3}%;height:100%;background:${pCol};opacity:.8;border-radius:2px;"></div></div>
@@ -5311,37 +5394,34 @@ const scY = cy - R * Math.sin(angle);
       }).join('')}
     </div>`:''}
 
-    <!-- ── Section E: Market Share ── -->
-    <div style="margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid rgba(17,68,160,0.12);display:flex;align-items:baseline;gap:12px;">
-      <span style="font-size:10px;font-weight:700;color:#6080a0;letter-spacing:.16em;text-transform:uppercase;">E</span>
-      <span style="font-size:18px;font-weight:700;color:#061228;letter-spacing:-.02em;">Market Share & Insights</span>
-      <span style="font-size:12px;color:#94a3b8;margin-left:auto;">Current landscape · 3-year target</span>
-    </div>
+    <!-- ── Section E: Market Share & Insights ── -->
+    ${secHdr('E','Market Share & Insights','Current landscape · 3-year target')}
     <div style="display:grid;grid-template-columns:260px 1fr;gap:20px;margin-bottom:32px;">
-      <!-- Donut -->
-      <div style="background:#fff;border-radius:8px;border:1px solid rgba(17,68,160,0.12);padding:20px;box-shadow:0 1px 6px rgba(6,18,40,.05);display:flex;flex-direction:column;align-items:center;gap:12px;">
-        <div style="width:100%;font-size:11px;font-weight:700;color:#1e3050;">Share Distribution</div>
-        ${(()=>{
-          const msd=ms.slice(0,6);
-          if(!msd.length)return '<div style="color:#94a3b8;font-size:12px;padding:20px;text-align:center;">No data</div>';
-          const palD=rptPal;
-          const tot=msd.reduce((s,m)=>s+(+m.pct||0),0)||100;
-          const W=200,cx=100,cy=100,OR=88,IR=54;
-          const slices=donutSVG(msd.map((m,i)=>({v:+m.pct||0,c:palD[i]})),W,cx,cy,OR,IR);
-          return `<svg width="${W}" height="${W}" viewBox="0 0 ${W} ${W}">${slices}
-            <circle cx="${cx}" cy="${cy}" r="${IR-1}" fill="#fff"/>
-            <text x="${cx}" y="${cy-4}" text-anchor="middle" font-size="13" font-weight="700" fill="#061228" font-family="'IBM Plex Mono',monospace">${a.overallScore}/100</text>
-            <text x="${cx}" y="${cy+10}" text-anchor="middle" font-size="7.5" fill="#94a3b8" font-family="'Inter',sans-serif" letter-spacing=".1em">SCORE</text>
-          </svg>
-          <div style="width:100%;">${msd.map((m,i)=>`<div style="display:flex;align-items:center;gap:7px;margin-bottom:6px;">
-            <div style="width:9px;height:9px;border-radius:2px;background:${palD[i]};flex-shrink:0;"></div>
-            <span style="flex:1;font-size:10px;color:#1e3050;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${esc(m.name||'')}</span>
-            <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:700;color:${palD[i]};">${m.pct}%</span>
-          </div>`).join('')}</div>`;
-        })()}
-      </div>
-      <!-- Insights -->
-      <div style="background:#fff;border-radius:8px;border:1px solid rgba(17,68,160,0.12);overflow:hidden;box-shadow:0 1px 6px rgba(6,18,40,.05);">
+      ${cardWrap(`
+        <div style="padding:16px 20px 12px;border-bottom:1px solid rgba(17,68,160,0.06);">
+          <div style="font-size:11px;font-weight:700;color:#1e3050;">Share Distribution</div>
+        </div>
+        <div style="padding:16px 20px;display:flex;flex-direction:column;align-items:center;gap:12px;">
+          ${(()=>{
+            const msd=ms.slice(0,6);
+            if(!msd.length)return '<div style="color:#94a3b8;font-size:12px;padding:20px;text-align:center;">No data</div>';
+            const tot=msd.reduce((s,m)=>s+(+m.pct||0),0)||100;
+            const W=200,cx=100,cy=100,OR=88,IR=54;
+            const slices=donutSVG(msd.map((m,i)=>({v:+m.pct||0,c:rptPal[i]})),W,cx,cy,OR,IR);
+            return `<svg width="${W}" height="${W}" viewBox="0 0 ${W} ${W}">${slices}
+              <circle cx="${cx}" cy="${cy}" r="${IR-1}" fill="#fff"/>
+              <text x="${cx}" y="${cy-4}" text-anchor="middle" font-size="13" font-weight="700" fill="#061228" font-family="'IBM Plex Mono',monospace">${a.overallScore}/100</text>
+              <text x="${cx}" y="${cy+10}" text-anchor="middle" font-size="7.5" fill="#94a3b8" font-family="'Inter',sans-serif" letter-spacing=".1em">SCORE</text>
+            </svg>
+            <div style="width:100%;">${msd.map((m,i)=>`<div style="display:flex;align-items:center;gap:7px;margin-bottom:6px;">
+              <div style="width:9px;height:9px;border-radius:2px;background:${rptPal[i]};flex-shrink:0;"></div>
+              <span style="flex:1;font-size:10px;color:#1e3050;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${esc(m.name||'')}</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:700;color:${rptPal[i]};">${m.pct}%</span>
+            </div>`).join('')}</div>`;
+          })()}
+        </div>
+      `)}
+      ${cardWrap(`
         <div style="padding:16px 22px 14px;border-bottom:1px solid rgba(17,68,160,0.06);">
           <div style="font-size:11px;font-weight:700;color:#1e3050;">Key Findings</div>
           <div style="font-size:10px;color:#94a3b8;margin-top:2px;">AI-generated · verified against market data</div>
@@ -5355,19 +5435,13 @@ const scY = cy - R * Math.sin(angle);
             </div>`;
           }).join('')||'<p style="color:#94a3b8;font-size:12px;text-align:center;padding:16px;">No insights available.</p>'}
         </div>
-      </div>
+      `)}
     </div>
 
-    <!-- ── Section F: 90-Day Action Plan ── -->
-    <div style="margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid rgba(17,68,160,0.12);display:flex;align-items:baseline;gap:12px;">
-      <span style="font-size:10px;font-weight:700;color:#6080a0;letter-spacing:.16em;text-transform:uppercase;">F</span>
-      <span style="font-size:18px;font-weight:700;color:#061228;letter-spacing:-.02em;">90-Day Execution Roadmap</span>
-      <span style="font-size:12px;color:#94a3b8;margin-left:auto;">Weeks 1–12 · prioritised actions</span>
-    </div>
+    <!-- ── Section F: 90-Day Execution Roadmap ── -->
+    ${secHdr('F','90-Day Execution Roadmap','Weeks 1–12 · prioritised actions')}
     <div style="background:#fff;border-radius:8px;border:1px solid rgba(17,68,160,0.12);overflow:hidden;margin-bottom:32px;box-shadow:0 1px 6px rgba(6,18,40,.05);">
-      <div style="padding:0 16px 4px;">
-        ${ganttSVG()}
-      </div>
+      <div style="padding:0 16px 4px;">${ganttSVG()}</div>
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid rgba(17,68,160,0.06);">
         ${[
           {c:'#059669',l:'Quick Wins'},
@@ -5381,13 +5455,47 @@ const scY = cy - R * Math.sin(angle);
       </div>
     </div>
 
+    <!-- ── Section G: Recommendations (NEW) ── -->
+    ${(recs&&recs.length)?`
+    ${secHdr('G','Recommendations','Ranked by urgency · specific · time-bound')}
+    <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:32px;">
+      ${recs.slice(0,5).map((r,i)=>{
+        const urgencyCol=i===0?'#dc2626':i<=2?'#1144a0':'#6080a0';
+        const urgencyBg=i===0?'#fff1f2':i<=2?'#eff6ff':'#f8faff';
+        const urgencyBorder=i===0?'#fecaca':i<=2?'#bfdbfe':'rgba(17,68,160,0.12)';
+        const timelineBg=r.timeline==='this week'?'#dc2626':r.timeline&&r.timeline.includes('30')?'#d97706':r.timeline&&r.timeline.includes('60')?'#1144a0':'#6080a0';
+        return `<div style="display:grid;grid-template-columns:52px 1fr;gap:0;background:#fff;border-radius:8px;border:1px solid ${urgencyBorder};overflow:hidden;box-shadow:0 1px 6px rgba(6,18,40,.04);">
+          <div style="background:${urgencyBg};display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px 8px;border-right:1px solid ${urgencyBorder};">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:22px;font-weight:700;color:${urgencyCol};">${r.rank||i+1}</div>
+            <div style="font-size:8px;font-weight:600;color:${urgencyCol};opacity:.6;text-transform:uppercase;letter-spacing:.08em;margin-top:2px;">${i===0?'NOW':i<=2?'SOON':'PLAN'}</div>
+          </div>
+          <div style="padding:16px 20px;">
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px;">
+              <div style="font-size:13px;font-weight:700;color:#061228;line-height:1.5;flex:1;">${esc(r.action||'')}</div>
+              ${r.timeline?`<span style="flex-shrink:0;font-size:9px;font-weight:700;color:#fff;background:${timelineBg};padding:3px 10px;border-radius:4px;white-space:nowrap;margin-top:2px;">${esc(r.timeline)}</span>`:''}
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+              ${r.expectedOutcome?`<div>
+                <div style="font-size:8px;font-weight:700;color:#059669;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;">Expected Outcome</div>
+                <div style="font-size:11px;color:#4a6080;line-height:1.55;">${esc(r.expectedOutcome)}</div>
+              </div>`:''}
+              ${r.whyNow?`<div>
+                <div style="font-size:8px;font-weight:700;color:#dc2626;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;">Why Not Later</div>
+                <div style="font-size:11px;color:#4a6080;line-height:1.55;">${esc(r.whyNow)}</div>
+              </div>`:''}
+            </div>
+          </div>
+        </div>`;
+      }).join('')}
+    </div>`:''}
+
     <!-- ══ FOOTER ══ -->
     <div style="display:flex;justify-content:space-between;align-items:center;padding-top:24px;border-top:2px solid #061228;">
       <div style="display:flex;align-items:center;gap:12px;">
         <div style="width:32px;height:32px;background:#061228;border-radius:6px;display:grid;place-items:center;font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:11px;color:#fff;">IP</div>
         <div>
           <div style="font-size:12px;font-weight:700;color:#061228;letter-spacing:.01em;">Infopace Management Pvt Ltd</div>
-          <div style="font-size:9px;color:#94a3b8;margin-top:1px;">Market Potential Assessment · Offline Analysis</div>
+          <div style="font-size:9px;color:#94a3b8;margin-top:1px;">Market Potential Assessment</div>
         </div>
       </div>
       <div style="text-align:right;">
@@ -5410,6 +5518,109 @@ const scY = cy - R * Math.sin(angle);
       </div>`;
     }
   }
+}
+/* ══ REPORT EMAIL FORM ══════════════════════════════════════════ */
+function showReportEmailForm() {
+  document.getElementById('rptBtnState').style.display    = 'none';
+  document.getElementById('rptInputState').style.display  = 'block';
+  // Pre-fill with onboarding email if available
+  var inp = document.getElementById('rptEmailInput');
+  var pre = (window._prefillEmail)
+          ? window._prefillEmail
+          : (window.dd && window.dd.fd && window.dd.fd.email)
+          ? window.dd.fd.email : '';
+  if (inp && pre && !inp.value) inp.value = pre;
+  setTimeout(function(){ if (inp) inp.focus(); }, 60);
+}
+
+function hideReportEmailForm() {
+  document.getElementById('rptInputState').style.display = 'none';
+  document.getElementById('rptBtnState').style.display   = 'block';
+  document.getElementById('rptEmailErr').style.display   = 'none';
+}
+
+function resetReportEmailForm() {
+  document.getElementById('rptSuccessState').style.display = 'none';
+  document.getElementById('rptBtnState').style.display     = 'block';
+}
+
+function submitReportEmail() {
+  var email = (document.getElementById('rptEmailInput').value || '').trim();
+  var errEl = document.getElementById('rptEmailErr');
+
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    errEl.textContent = 'Please enter a valid email address.';
+    errEl.style.display = 'block';
+    return;
+  }
+  errEl.style.display = 'none';
+
+  if (!dd || !dd.a) {
+    errEl.textContent = 'Please complete the assessment first to generate your report.';
+    errEl.style.display = 'block';
+    // Auto-redirect to assessment after 1.5 seconds
+    setTimeout(function(){ 
+        if(typeof switchView === 'function') switchView('assess');
+    }, 1500);
+    return;
+}
+
+  // Show loading
+  document.getElementById('rptInputState').style.display   = 'none';
+  document.getElementById('rptLoadingState').style.display = 'block';
+
+  // Build payload from global dd (set by renderDash)
+  var fd = dd.fd, a = dd.a;
+  var payload = {
+    recipientEmail:     email,
+    bizName:            fd.bizName || fd.organization || 'Your Product',
+    sector:             fd.sector  || '',
+    geo:                fd.geo     || '',
+    overallScore:       a.overallScore,
+    grade:              a.grade,
+    verdict:            a.verdict,
+    realTimeInsight:    a.realTimeInsight,
+    tamCrore:           a.tamCrore,
+    samCrore:           a.samCrore,
+    somCrore:           a.somCrore,
+    growthRate:         a.growthRate,
+    dimensions:         a.dimensions,
+    dimensionExplanations: a.dimensionExplanations,
+    executiveSummary:   a.executiveSummary,
+    stageContext:       a.stageContext,
+    sectorBrutalTruth:  a.sectorBrutalTruth,
+    investorReadiness:  a.investorReadiness,
+    keyInsights:        a.keyInsights,
+    topRisks:           a.topRisks,
+    quickWins:          a.quickWins,
+    competitorProfiles: a.competitorProfiles,
+    riskMitigations:    a.riskMitigations,
+    recommendations:    a.recommendations,
+  };
+
+  fetch('/api/send-report', {
+    method:  'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body:    JSON.stringify(payload)
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(data) {
+    document.getElementById('rptLoadingState').style.display = 'none';
+    if (data.ok) {
+      document.getElementById('rptSentTo').textContent = 'Sent to ' + email;
+      document.getElementById('rptSuccessState').style.display = 'block';
+    } else {
+      document.getElementById('rptInputState').style.display = 'block';
+      errEl.textContent = data.error || 'Something went wrong. Please try again.';
+      errEl.style.display = 'block';
+    }
+  })
+  .catch(function() {
+    document.getElementById('rptLoadingState').style.display = 'none';
+    document.getElementById('rptInputState').style.display   = 'block';
+    errEl.textContent = 'Network error — is server.js running?';
+    errEl.style.display = 'block';
+  });
 }
 </script>
 </body>
