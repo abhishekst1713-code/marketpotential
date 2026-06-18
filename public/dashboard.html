@@ -5618,7 +5618,7 @@ function submitReportEmail() {
   .catch(function() {
     document.getElementById('rptLoadingState').style.display = 'none';
     document.getElementById('rptInputState').style.display   = 'block';
-    errEl.textContent = 'Network error — is server.js running?';
+    errEl.textContent = 'Network error';
     errEl.style.display = 'block';
   });
 }
