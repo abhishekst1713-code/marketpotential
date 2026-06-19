@@ -786,7 +786,7 @@ html, body {
         ctx.strokeStyle=`rgba(26,86,219,${(.055+prox*.18).toFixed(3)})`; ctx.stroke();
       }
       if(r<ROWS){
-        const nb=nodes[(r+1)*WC+c];
+        const nb=nodes[(r+1)*WC+c]; 
         const mdx=(n.x+nb.x)/2-(mouse.x||W/2), mdy=(n.y+nb.y)/2-(mouse.y||H/2);
         const prox=Math.exp(-(mdx*mdx+mdy*mdy)/(2*190*190));
         ctx.beginPath(); ctx.moveTo(n.x,n.y); ctx.lineTo(nb.x,nb.y);
@@ -794,7 +794,7 @@ html, body {
       }
     }
 
-    // 3. Cursor halo
+    // 3. Cursor halo                                 #
     if(mouse.x>-9000){
       const hr=100+prevSpeed*2.8;
       const hg=ctx.createRadialGradient(mouse.x,mouse.y,0,mouse.x,mouse.y,hr);
@@ -5618,7 +5618,7 @@ function submitReportEmail() {
   .catch(function() {
     document.getElementById('rptLoadingState').style.display = 'none';
     document.getElementById('rptInputState').style.display   = 'block';
-    errEl.textContent = 'Network error';
+    errEl.textContent = 'Please contact our team!';
     errEl.style.display = 'block';
   });
 }
